@@ -1,0 +1,757 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Material Bootstrap Wizard by Creative Tim</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+	<meta name="viewport" content="width=device-width" />
+
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png" />
+	<link rel="icon" type="image/png" href="assets/img/favicon.png" />
+
+	<!--     Fonts and icons     -->
+	<link rel="stylesheet" type="text/css"
+		href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+	<!-- CSS Files -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/css/material-bootstrap-wizard.css" rel="stylesheet" />
+
+	<!-- CSS Just for demo purpose, don't include it in your project -->
+	<link href="assets/css/demo.css" rel="stylesheet" />
+
+	<style>
+		.hiddenPics {
+			max-width: 1px;
+			max-height: 1px;
+			visibility: hidden;
+		}
+
+		.resultImage {
+			max-width: 80% !important;
+			max-height: 50%;
+		}
+
+		.spacer {
+			height: 100px;
+		}
+
+		.text-link {
+			color: #434fb8 !important;
+			cursor: pointer;
+			border: 0px;
+			background-color: transparent;
+		}
+
+		.text-link:hover {
+			color: #b0b1c0 !important;
+			cursor: pointer;
+		}
+
+		input {
+			width: 20%;
+		}
+
+		.wizard-card {
+			height: 800px;
+			margin-bottom: 50px;
+		}
+
+		.logo {
+			max-width: 70px !important;
+		}
+
+		.form-control {
+			max-width: 50% !important;
+		}
+
+
+
+	</style>
+</head>
+
+<body>
+	<div class="image-container set-full-height" style="background-image: url('../images/great-wall2.jpg')">
+
+		<!--   Big container   -->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8 col-sm-offset-2">
+					<!--      Wizard container        -->
+					<div class="wizard-container">
+						<div class="card wizard-card" data-color="red" id="wizard">
+							<form action="" method="">
+								<!--        You can switch " data-color="blue" "  with one of the next bright colors: "green", "orange", "red", "purple"             -->
+
+								<div class="wizard-header">
+									<center>
+
+										<div class="wizard-title">
+											<img src="../images/logo.png" width="200px">
+										</div>
+									</center>
+
+									<h3 class="wizard-title">
+										Travelling and don't speak the local language?
+									</h3>
+									<h5>Search for an image below and use it to find your way around!</h5>
+									<center>
+										<input id="query" onkeydown="predictSearch()" onchange="predictSearch()"
+											oninput="predictSearch()" type="text"
+											placeholder="Start typing to receive suggestions" class="form-control">
+
+									</center>
+									<br>
+			
+									<div id="predictions"></div>
+									<br>
+
+									</center>
+								</div>
+					
+								<center>
+									<img src="" class="resultImage" id="queryResult">
+								</center>
+								<center>
+									<div id="errorMessage"></div>
+								</center>
+								<center>
+									<img src="../images/anna.jpg" id="anna" class="hiddenPics">
+									<img src="../images/yakko.jpg" id="yakko" class="hiddenPics">
+									<img src="../images/anna.jpg" id="throwaway" class="hiddenPics">
+									<img src="../images/ac.jpg" id="ac" class="hiddenPics">
+									<img src="../images/bluetooth.png" id="bluetooth" class="hiddenPics">
+									<img src="../images/burger-king.jpg" id="burger-king" class="hiddenPics">
+									<img src="../images/mc-donald’s.jpeg" id="mc-donald’s" class="hiddenPics">
+									<img src="../images/starbucks.jpg" id="starbucks" class="hiddenPics">
+									<img src="../images/adaptor.jpg" id="adaptor" class="hiddenPics">
+									<img src="../images/air-conditioning.jpg" id="air-conditioning" class="hiddenPics">
+									<img src="../images/airplane.jpeg" id="airplane" class="hiddenPics">
+									<img src="../images/airplane.jpeg" id="plane" class="hiddenPics">
+									<img src="../images/airport.jpg" id="airport" class="hiddenPics">
+									<img src="../images/alcohol.jpg" id="alcohol" class="hiddenPics">
+									<img src="../images/allergy.jpg" id="allergy" class="hiddenPics">
+									<img src="../images/apple.jpg" id="apple" class="hiddenPics">
+									<img src="../images/arm.jpg" id="arm" class="hiddenPics">
+									<img src="../images/backpack.jpg" id="backpack" class="hiddenPics">
+									<img src="../images/bag.jpg" id="bag" class="hiddenPics">
+									<img src="../images/bakery.jpg" id="bakery" class="hiddenPics">
+									<img src="../images/banana.jpg" id="banana" class="hiddenPics">
+									<img src="../images/bar.jpg" id="bar" class="hiddenPics">
+									<img src="../images/barbeque.jpg" id="barbeque" class="hiddenPics">
+									<img src="../images/barber.jpg" id="barber" class="hiddenPics">
+									<img src="../images/beach.jpg" id="beach" class="hiddenPics">
+									<img src="../images/bed.jpg" id="bed" class="hiddenPics">
+									<img src="../images/bench.jpg" id="bench" class="hiddenPics">
+									<img src="../images/bed.jpg" id="bedroom" class="hiddenPics">
+									<img src="../images/beer.jpg" id="beer" class="hiddenPics">
+									<img src="../images/bin.jpg" id="bin" class="hiddenPics">
+									<img src="../images/bird.jpg" id="bird" class="hiddenPics">
+									<img src="../images/boat.jpg" id="boat" class="hiddenPics">
+									<img src="../images/book.jpg" id="book" class="hiddenPics">
+									<img src="../images/bookstore.jpg" id="bookstore" class="hiddenPics">
+									<img src="../images/bottle.jpg" id="bottle" class="hiddenPics">
+									<img src="../images/bowl.jpg" id="bowl" class="hiddenPics">
+									<img src="../images/boy.jpeg" id="boy" class="hiddenPics">
+									<img src="../images/bread.jpg" id="bread" class="hiddenPics">
+									<img src="../images/bridge.jpg" id="bridge" class="hiddenPics">
+									<img src="../images/burger.jpg" id="burger" class="hiddenPics">
+									<img src="../images/bus.jpeg" id="bus" class="hiddenPics">
+									<img src="../images/bus-stop.jpg" id="bus-stop" class="hiddenPics">
+									<img src="../images/cable-car.jpg" id="cable-car" class="hiddenPics">
+									<img src="../images/calculator.jpg" id="calculator" class="hiddenPics">
+									<img src="../images/camera.jpg" id="camera" class="hiddenPics">
+									<img src="../images/camp.jpg" id="camp" class="hiddenPics">
+									<img src="../images/cap.jpg" id="cap" class="hiddenPics">
+									<img src="../images/car.jpg" id="car" class="hiddenPics">
+									<img src="../images/card.jpg" id="card" class="hiddenPics">
+									<img src="../images/cards.jpg" id="cards" class="hiddenPics">
+									<img src="../images/money.jpg" id="cash" class="hiddenPics">
+									<img src="../images/cat.jpg" id="cat" class="hiddenPics">
+									<img src="../images/chair.jpg" id="chair" class="hiddenPics">
+									<img src="../images/charger.jpg" id="charger" class="hiddenPics">
+									<img src="../images/child.jpg" id="child" class="hiddenPics">
+									<img src="../images/cinema.jpg" id="cinema" class="hiddenPics">
+									<img src="../images/clock.jpg" id="clock" class="hiddenPics">
+									<img src="../images/clothes.jpg" id="clothes" class="hiddenPics">
+									<img src="../images/club.jpg" id="club" class="hiddenPics">
+									<img src="../images/cocktail.jpg" id="cocktail" class="hiddenPics">
+									<img src="../images/coffee.jpg" id="coffee" class="hiddenPics">
+									<img src="../images/coffee-shop.jpg" id="coffee-shop" class="hiddenPics">
+									<img src="../images/computer.jpg" id="computer" class="hiddenPics">
+									<img src="../images/condoms.jpg" id="condoms" class="hiddenPics">
+									<img src="../images/convenience-store.jpg" id="convenience-store" class="hiddenPics">
+									<img src="../images/cow.jpg" id="cow" class="hiddenPics">
+									<img src="../images/crackers.jpg" id="crackers" class="hiddenPics">
+									<img src="../images/credit-card.jpg" id="credit-card" class="hiddenPics">
+									<img src="../images/cup.jpg" id="cup" class="hiddenPics">
+									<img src="../images/cutlery.jpg" id="cutlery" class="hiddenPics">
+									<img src="../images/day.jpg" id="day" class="hiddenPics">
+									<img src="../images/debit-card.jpg" id="debit-card" class="hiddenPics">
+									<img src="../images/dog.jpg" id="dog" class="hiddenPics">
+									<img src="../images/driver’s-license.jpg" id="driver’s-license" class="hiddenPics">
+									<img src="../images/duck.jpg" id="duck" class="hiddenPics">
+									<img src="../images/egg.jpg" id="egg" class="hiddenPics">
+									<img src="../images/exchange.jpg" id="exchange" class="hiddenPics">
+									<img src="../images/ferry.jpg" id="ferry" class="hiddenPics">
+									<img src="../images/first-aid-kit.jpg" id="first-aid-kit" class="hiddenPics">
+									<img src="../images/fish.jpg" id="fish" class="hiddenPics">
+									<img src="../images/fog.jpg" id="fog" class="hiddenPics">
+									<img src="../images/food.jpg" id="food" class="hiddenPics">
+									<img src="../images/foot.jpg" id="foot" class="hiddenPics">
+									<img src="../images/fork.jpg" id="fork" class="hiddenPics">
+									<img src="../images/fridge.jpg" id="fridge" class="hiddenPics">
+									<img src="../images/fruits.jpg" id="fruits" class="hiddenPics">
+									<img src="../images/gas-station.jpg" id="gas-station" class="hiddenPics">
+									<img src="../images/girl.jpg" id="girl" class="hiddenPics">
+									<img src="../images/glass.jpg" id="glass" class="hiddenPics">
+									<img src="../images/glasses.jpg" id="glasses" class="hiddenPics">
+									<img src="../images/glue.jpg" id="glue" class="hiddenPics">
+									<img src="../images/gym.jpg" id="gym" class="hiddenPics">
+									<img src="../images/hair.jpg" id="hair" class="hiddenPics">
+									<img src="../images/hair-tie.jpg" id="hair-tie" class="hiddenPics">
+									<img src="../images/hairbrush.jpg" id="hairbrush" class="hiddenPics">
+									<img src="../images/hand.jpg" id="hand" class="hiddenPics">
+									<img src="../images/hand-sanitizer.jpg" id="hand-sanitizer" class="hiddenPics">
+									<img src="../images/hike.jpg" id="hike" class="hiddenPics">
+									<img src="../images/horse.jpg" id="horse" class="hiddenPics">
+									<img src="../images/hospital.jpg" id="hospital" class="hiddenPics">
+									<img src="../images/hostel.jpg" id="hostel" class="hiddenPics">
+									<img src="../images/hotel.jpg" id="hotel" class="hiddenPics">
+									<img src="../images/internet.jpg" id="internet" class="hiddenPics">
+									<img src="../images/intersection.jpg" id="intersection" class="hiddenPics">
+									<img src="../images/iron.jpg" id="iron" class="hiddenPics">
+									<img src="../images/jacket.jpg" id="jacket" class="hiddenPics">
+									<img src="../images/juice.jpg" id="juice" class="hiddenPics">
+									<img src="../images/key.jpg" id="key" class="hiddenPics">
+									<img src="../images/kitchen.jpg" id="kitchen" class="hiddenPics">
+									<img src="../images/knife.jpg" id="knife" class="hiddenPics">
+									<img src="../images/lamb.jpg" id="lamb" class="hiddenPics">
+									<img src="../images/laptop.jpeg" id="laptop" class="hiddenPics">
+									<img src="../images/laundry.jpg" id="laundry" class="hiddenPics">
+									<img src="../images/library.jpg" id="library" class="hiddenPics">
+									<img src="../images/lion.jpg" id="lion" class="hiddenPics">
+									<img src="../images/mall.jpg" id="mall" class="hiddenPics">
+									<img src="../images/man.jpeg" id="man" class="hiddenPics">
+									<img src="../images/mango.jpg" id="mango" class="hiddenPics">
+									<img src="../images/map.jpg" id="map" class="hiddenPics">
+									<img src="../images/marker.jpg" id="marker" class="hiddenPics">
+									<img src="../images/market.jpg" id="market" class="hiddenPics">
+									<img src="../images/meat.jpg" id="meat" class="hiddenPics">
+									<img src="../images/medicine.jpg" id="medicine" class="hiddenPics">
+									<img src="../images/men.jpg" id="men" class="hiddenPics">
+									<img src="../images/metro.jpg" id="metro" class="hiddenPics">
+									<img src="../images/microwave.jpg" id="microwave" class="hiddenPics">
+									<img src="../images/milk.jpg" id="milk" class="hiddenPics">
+									<img src="../images/minifridge.jpg" id="minifridge" class="hiddenPics">
+									<img src="../images/money.jpg" id="money" class="hiddenPics">
+									<img src="../images/night.jpg" id="moon" class="hiddenPics">
+									<img src="../images/motorcycle.jpg" id="motorcycle" class="hiddenPics">
+									<img src="../images/mountain.jpg" id="mountain" class="hiddenPics">
+									<img src="../images/movie.jpg" id="movie" class="hiddenPics">
+									<img src="../images/mug.jpg" id="cup" class="hiddenPics">
+									<img src="../images/museum.jpg" id="museum" class="hiddenPics">
+									<img src="../images/night.jpg" id="night" class="hiddenPics">
+									<img src="../images/noodles.jpg" id="noodles" class="hiddenPics">
+									<img src="../images/notebook.jpg" id="notebook" class="hiddenPics">
+									<img src="../images/numbers.jpg" id="numbers" class="hiddenPics">
+									<img src="../images/nuts.jpg" id="nuts" class="hiddenPics">
+									<img src="../images/ocean.jpg" id="ocean" class="hiddenPics">
+									<img src="../images/oven.jpg" id="oven" class="hiddenPics">
+									<img src="../images/pan.jpg" id="pan" class="hiddenPics">
+									<img src="../images/panda.jpg" id="panda" class="hiddenPics">
+									<img src="../images/papaya.jpg" id="papaya" class="hiddenPics">
+									<img src="../images/paper.jpg" id="paper" class="hiddenPics">
+									<img src="../images/passport.jpg" id="passport" class="hiddenPics">
+									<img src="../images/pasta.jpg" id="pasta" class="hiddenPics">
+									<img src="../images/path.jpg" id="path" class="hiddenPics">
+									<img src="../images/peanuts.jpg" id="peanuts" class="hiddenPics">
+									<img src="../images/pen.jpg" id="pen" class="hiddenPics">
+									<img src="../images/pencil.png" id="pencil" class="hiddenPics">
+									<img src="../images/pharmacy.jpg" id="pharmacy" class="hiddenPics">
+									<img src="../images/phone.jpg" id="phone" class="hiddenPics">
+									<img src="../images/picture.jpg" id="picture" class="hiddenPics">
+									<img src="../images/pig.jpg" id="pig" class="hiddenPics">
+									<img src="../images/pizza.jpg" id="pizza" class="hiddenPics">
+									<img src="../images/plastic-bag.jpg" id="plastic-bag" class="hiddenPics">
+									<img src="../images/plate.jpg" id="plate" class="hiddenPics">
+									<img src="../images/police.jpg" id="police" class="hiddenPics">
+									<img src="../images/pork.jpg" id="pork" class="hiddenPics">
+									<img src="../images/pot.jpg" id="pot" class="hiddenPics">
+									<img src="../images/power.jpg" id="power" class="hiddenPics">
+									<img src="../images/power-bank.jpg" id="power-bank" class="hiddenPics">
+									<img src="../images/pregnancy-test.jpg" id="pregnancy-test" class="hiddenPics">
+									<img src="../images/purse.jpg" id="purse" class="hiddenPics">
+									<img src="../images/rain.jpg" id="rain" class="hiddenPics">
+									<img src="../images/razor.jpg" id="razor" class="hiddenPics">
+									<img src="../images/restaurant.jpg" id="restaurant" class="hiddenPics">
+									<img src="../images/rice.jpg" id="rice" class="hiddenPics">
+									<img src="../images/road.jpg" id="road" class="hiddenPics">
+									<img src="../images/salad.jpg" id="salad" class="hiddenPics">
+									<img src="../images/salmon.jpg" id="salmon" class="hiddenPics">
+									<img src="../images/school.jpg" id="school" class="hiddenPics">
+									<img src="../images/scissors.jpg" id="scissors" class="hiddenPics">
+									<img src="../images/sea.jpg" id="sea" class="hiddenPics">
+									<img src="../images/shampoo.jpg" id="shampoo" class="hiddenPics">
+									<img src="../images/shop.jpg" id="shop" class="hiddenPics">
+									<img src="../images/shopping.jpg" id="shopping" class="hiddenPics">
+									<img src="../images/mall.jpg" id="shopping-center" class="hiddenPics">
+									<img src="../images/mall.jpg" id="shopping-mall" class="hiddenPics">
+									<img src="../images/sit.jpg" id="sit" class="hiddenPics">
+									<img src="../images/slippers.jpg" id="slippers" class="hiddenPics">
+									<img src="../images/snacks.jpg" id="snacks" class="hiddenPics">
+									<img src="../images/soap.jpg" id="soap" class="hiddenPics">
+									<img src="../images/socket.jpg" id="socket" class="hiddenPics">
+									<img src="../images/socks.jpg" id="socks" class="hiddenPics">
+									<img src="../images/spoon.jpg" id="spoon" class="hiddenPics">
+									<img src="../images/spaghetti.jpg" id="spoon" class="hiddenPics">
+									<img src="../images/ship.jpg" id="spoon" class="hiddenPics">
+									<img src="../images/square.jpg" id="square" class="hiddenPics">
+									<img src="../images/stall.jpg" id="stall" class="hiddenPics">
+									<img src="../images/store.jpg" id="store" class="hiddenPics">
+									<img src="../images/stove.jpg" id="stove" class="hiddenPics">
+									<img src="../images/strawberry.jpg" id="strawberry" class="hiddenPics">
+									<img src="../images/street.jpg" id="street" class="hiddenPics">
+									<img src="../images/student.jpg" id="student" class="hiddenPics">
+									<img src="../images/subway.jpg" id="subway" class="hiddenPics">
+									<img src="../images/suitcase.jpg" id="suitcase" class="hiddenPics">
+									<img src="../images/sun.jpg" id="sun" class="hiddenPics">
+									<img src="../images/sunglasses.jpg" id="sunglasses" class="hiddenPics">
+									<img src="../images/sunny.jpg" id="sunny" class="hiddenPics">
+									<img src="../images/sunscreen.jpg" id="sunscreen" class="hiddenPics">
+									<img src="../images/table.jpg" id="table" class="hiddenPics">
+									<img src="../images/taxi.jpg" id="taxi" class="hiddenPics">
+									<img src="../images/tea.jpg" id="tea" class="hiddenPics">
+									<img src="../images/phone.jpg" id="telephone" class="hiddenPics">
+									<img src="../images/tv.png" id="television" class="hiddenPics">
+									<img src="../images/tv.png" id="tv" class="hiddenPics">
+									<img src="../images/tent.jpg" id="tent" class="hiddenPics">
+									<img src="../images/ticket-office.jpg" id="ticket-office" class="hiddenPics">
+									<img src="../images/tiger.jpg" id="tiger" class="hiddenPics">
+									<img src="../images/time.jpg" id="time" class="hiddenPics">
+									<img src="../images/toilet.jpg" id="toilet" class="hiddenPics">
+									<img src="../images/toilet-paper.jpg" id="toilet-paper" class="hiddenPics">
+									<img src="../images/toiletries.jpg" id="toiletries" class="hiddenPics">
+									<img src="../images/toilets.png" id="toilets" class="hiddenPics">
+									<img src="../images/toothbrush.jpg" id="toothbrush" class="hiddenPics">
+									<img src="../images/tourist.jpg" id="tourist" class="hiddenPics">
+									<img src="../images/tourist-attraction.jpg" id="tourist-attraction"
+										class="hiddenPics">
+									<img src="../images/tourist-center.jpg" id="tourist-center" class="hiddenPics">
+									<img src="../images/towel.jpg" id="towel" class="hiddenPics">
+									<img src="../images/tower.jpg" id="tower" class="hiddenPics">
+									<img src="../images/trail.jpg" id="trail" class="hiddenPics">
+									<img src="../images/train.jpg" id="train" class="hiddenPics">
+									<img src="../images/train-station.jpg" id="train-station" class="hiddenPics">
+									<img src="../images/trash.jpg" id="trash" class="hiddenPics">
+									<img src="../images/bin.jpg" id="trash-can" class="hiddenPics">
+									<img src="../images/tube.jpg" id="tube" class="hiddenPics">
+									<img src="../images/umbrella.png" id="umbrella" class="hiddenPics">
+									<img src="../images/university.jpg" id="university" class="hiddenPics">
+									<img src="../images/vegan.jpg" id="vegan" class="hiddenPics">
+									<img src="../images/vegetables.jpg" id="vegetables" class="hiddenPics">
+									<img src="../images/vegetarian.jpg" id="vegetarian" class="hiddenPics">
+									<img src="../images/vodka.jpg" id="vodka" class="hiddenPics">
+									<img src="../images/wall.jpg" id="wall" class="hiddenPics">
+									<img src="../images/watch.jpg" id="watch" class="hiddenPics">
+									<img src="../images/water.jpg" id="water" class="hiddenPics">
+									<img src="../images/wifi.jpg" id="wifi" class="hiddenPics">
+									<img src="../images/window.jpg" id="window" class="hiddenPics">
+									<img src="../images/wine.jpg" id="wine" class="hiddenPics">
+									<img src="../images/wing.jpg" id="wing" class="hiddenPics">
+									<img src="../images/wipes.jpg" id="wipes" class="hiddenPics">
+									<img src="../images/woman.jpg" id="woman" class="hiddenPics">
+									<img src="../images/women.jpg" id="women" class="hiddenPics">
+									<div class="spacer"></div>
+								</center>
+
+						</div>
+
+
+					</div>
+	
+					</form>
+				</div>
+			</div> <!-- wizard container -->
+			<br>
+			<br>
+		</div>
+	</div> <!-- row -->
+	</div> <!--  big container -->
+
+	</div>
+
+	<script>
+
+
+			var lastImage = document.getElementById('throwaway');
+	
+			function runSearch(providedQuery) {
+				var query;
+				if (providedQuery != undefined) {
+					query = providedQuery
+				}
+				else {
+					query = document.getElementById('query').value;
+				}
+				// lastImage.setAttribute('class', 'hiddenPics');
+				// var image = document.getElementById(query.toLowerCase().split(' ').join('-'));
+				var image = query.toLowerCase().split(' ').join('-');
+				if (image == undefined) {
+					document.getElementById('errorMessage').innerHTML = "<h5>Could not find a matching image, sorry!</h5>";
+					previousImage.setAttribute('class', 'hiddenPics');
+				}
+				else {
+					document.getElementById('errorMessage').innerHTML = "";
+					var queryResult = document.getElementById('queryResult');
+					queryResult.setAttribute('src', document.getElementById(image).src);
+					// queryResult.setAttribute('width', "80%");
+					queryResult.setAttribute('height', 250);
+					//image.setAttribute('class', 'resultImage');
+					//image.setAttribute('width', 300);
+					// lastImage = image;
+				}
+			}
+	
+			function predictSearch() {
+				var currentSearch = document.getElementById('query').value;
+				document.getElementById('predictions').innerHTML = '';
+				document.getElementById('errorMessage').innerHTML = "";
+				if (currentSearch != '') {
+					var sameFirstLetterWords = imageList[currentSearch[0]];
+					var len = sameFirstLetterWords.length;
+					var matchesArr = [];
+					for (var i = 0; i < len; i++) {
+						if (matchesArr.length == 4) {
+							break;
+						}
+						for (var j = 0; j < currentSearch.length; j++) {
+							if (currentSearch[j] != sameFirstLetterWords[i][j]) {
+								break;
+							}
+							else if (j == currentSearch.length - 1) {
+								matchesArr.push(sameFirstLetterWords[i]);
+							}
+						}
+					}
+					matchesArr.forEach(function (word) {
+						document.getElementById('predictions').innerHTML += '<p><button class="text-link" onmouseover="runSearch(this.innerHTML)">' + word + '</button></p>';
+					})
+				}
+			}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+			var imageList = {
+				"a": [
+					"adaptor",
+					"air conditioning",
+					"airplane",
+					"airport",
+					"alcohol",
+					"allergy",
+					"apple",
+					"arm",
+					"anna"
+				],
+				"b": [
+					"backpack",
+					"bag",
+					"bakery",
+					"banana",
+					"bar",
+					"barbeque",
+					"barber",
+					"beach",
+					"bed",
+					"bedroom",
+					"beer",
+					"bench",
+					"bin",
+					"bird",
+					"boat",
+					"book",
+					"bookstore",
+					"bottle",
+					"bowl",
+					"boy",
+					"bread",
+					"bridge",
+					"burger",
+					"bus",
+					"bus stop"
+				],
+				"c": [
+					"cable car",
+					"calculator",
+					"camera",
+					"camp",
+					"cap",
+					"car",
+					"card",
+					"cards",
+					"cash",
+					"cat",
+					"chair",
+					"charger",
+					"child",
+					"cinema",
+					"clock",
+					"clothes",
+					"club",
+					"cocktail",
+					"coffee",
+					"coffee shop",
+					"computer",
+					"condoms",
+					"convenience store",
+					"cow",
+					"crackers",
+					"credit card",
+					"cup",
+					"cutlery"
+				],
+				"d": [
+					"day",
+					"debit card",
+					"dog",
+					"driver’s license",
+					"duck"
+				],
+				"e": [
+					"egg",
+					"exchange"
+				],
+				"f": [
+					"ferry",
+					"first aid kit",
+					"fish",
+					"fog",
+					"food",
+					"foot",
+					"fork",
+					"fridge",
+					"fruits"
+				],
+				"g": [
+					"gas station",
+					"girl",
+					"glass",
+					"glasses",
+					"glue",
+					"gym"
+				],
+				"h": [
+					"hair",
+					"hair-tie",
+					"hairbrush",
+					"hand",
+					"hand sanitizer",
+					"hike",
+					"horse",
+					"hospital",
+					"hostel",
+					"hotel"
+				],
+				"i": [
+					"internet",
+					"intersection",
+					"iron"
+				],
+				"j": [
+					"jacket",
+					"juice"
+				],
+				"k": [
+					"key",
+					"kitchen",
+					"knife"
+				],
+				"l": [
+					"lamb",
+					"laptop",
+					"laundry",
+					"library",
+					"lion"
+				],
+				"m": [
+					"mall",
+					"man",
+					"mango",
+					"map",
+					"marker",
+					"market",
+					"meat",
+					"medicine",
+					"men",
+					"metro",
+					"microwave",
+					"milk",
+					"minifridge",
+					"money",
+					"moon",
+					"motorcycle",
+					"mountain",
+					"movie",
+					"mug",
+					"museum"
+				],
+				"n": [
+					"night",
+					"noodles",
+					"notebook",
+					"numbers",
+					"nuts"
+				],
+				"o": [
+					"ocean",
+					"oven"
+				],
+				"p": [
+					"pan",
+					"panda",
+					"papaya",
+					"paper",
+					"passport",
+					"pasta",
+					"path",
+					"peanuts",
+					"pen",
+					"pencil",
+					"pharmacy",
+					"phone",
+					"picture",
+					"pig",
+					"pizza",
+					"plane",
+					"plastic bag",
+					"plate",
+					"police",
+					"pork",
+					"pot",
+					"power",
+					"power bank",
+					"pregnancy test",
+					"purse"
+				],
+				"q": [],
+				"r": [
+					"rain",
+					"razor",
+					"restaurant",
+					"rice",
+					"road"
+				],
+				"s": [
+					"salad",
+					"salmon",
+					"school",
+					"scissors",
+					"sea",
+					"shampoo",
+					"shop",
+					"shopping",
+					"shopping center",
+					"shopping mall",
+					"sit",
+					"slippers",
+					"snacks",
+					"soap",
+					"socket",
+					"socks",
+					"spaghetti",
+					"spoon",
+					"square",
+					"stall",
+					"store",
+					"stove",
+					"strawberry",
+					"street",
+					"student",
+					"subway",
+					"suitcase",
+					"sun",
+					"sunglasses",
+					"sunny",
+					"sunscreen"
+				],
+				"t": [
+					"table",
+					"taxi",
+					"tea",
+					"telephone",
+					"television",
+					"tv",
+					"tent",
+					"ticket office",
+					"tiger",
+					"time",
+					"toilet",
+					"toilet paper",
+					"toiletries",
+					"toilets",
+					"toothbrush",
+					"tourist",
+					"tourist attraction",
+					"tourist center",
+					"towel",
+					"tower",
+					"trail",
+					"train",
+					"train station",
+					"trash",
+					"trash can",
+					"tube"
+				],
+				"u": [
+					"umbrella",
+					"university"
+				],
+				"v": [
+					"vegan",
+					"vegetables",
+					"vegetarian",
+					"vodka"
+				],
+				"w": [
+					"wall",
+					"watch",
+					"water",
+					"wifi",
+					"window",
+					"wine",
+					"wing",
+					"wipes",
+					"woman",
+					"women"
+				],
+				"x": [],
+				"y": [],
+				"z": []
+			}
+		</script>
+
+</body>
+<!--   Core JS Files   -->
+<script src="assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/js/jquery.bootstrap.js" type="text/javascript"></script>
+
+<!--  Plugin for the Wizard -->
+<script src="assets/js/material-bootstrap-wizard.js"></script>
+
+<!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
+<script src="assets/js/jquery.validate.min.js"></script>
+
+</html>
