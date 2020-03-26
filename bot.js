@@ -157,7 +157,8 @@ var d = {
     35: 35,
     36: 36,
     37: 37,
-    38: 38
+    38: 38,
+    39: 39
 }
 
 var questions = [
@@ -308,7 +309,7 @@ var questions = [
     // 16
     [
         "agua",
-        ["beber", "agua", "agua", "tomar", "líquido", "15", "minutos", "estômago", "cura", "previne"],
+        ["beber", "agua", "agua", "tomar", "liquido", "15", "minutos", "estômago", "cura", "previne"],
         "Tomar líquido de 15 em 15 minutos me impede de contrair o vírus?",
         "Não. Essa é uma mentira que circulou pela internet.",
         "Snopes",
@@ -362,7 +363,7 @@ var questions = [
     // 22
     [
         "crianças",
-        ["índice", "crianças", "risco", "mortes", "idade", "novos", "mais", "jovens", "estão"],
+        ["indice", "crianças", "risco", "mortes", "idade", "novos", "mais", "jovens", "estão"],
         "Crianças e jovens estão em risco?",
         "O vírus pode causar problemas independente da idade. Porém, a maior parte dos casos graves e mortes afetam os idosos.",
         "Prefeitura do Rio de Janeiro",
@@ -371,7 +372,7 @@ var questions = [
     // 23
     [
         "idosos",
-        ["índice", "idosos", "risco", "mortes", "idade", "velhos", "avós", "morte", "estão"],
+        ["indice", "idosos", "risco", "mortes", "idade", "velhos", "avós", "morte", "estão"],
         "Idosos estão em risco?",
         "Sim. A maior parte dos casos graves e mortes afetam os idosos. Acima dos 60 anos, o índice de mortalidade da doença aumenta significantemente.",
         "Prefeitura do Rio de Janeiro",
@@ -407,7 +408,7 @@ var questions = [
     // 27
     [
         "mortalidade",
-        ["taxa", "mortalidade", "letal", "quão", "indice", "morte", "chance", "probabilidade"],
+        ["taxa", "mortalidade", "letal", "quão", "indice", "morte", "chance", "probabilidade", "mortes"],
         "Qual é a taxa de mortalidade do COVID-19?",
         "A taxa de mortalidade varia muito coma a idade mas é estimada no geral entre 1-3%. Ninguém pode saber ao certo. A gripe comum, por sua vez, tem uma taxa de mortalidade de 0.1%.",
         "BBC", 
@@ -416,7 +417,7 @@ var questions = [
     // 28
     [
         "grave",
-        ["sintomas", "graves", "desenvolvem", "crítico", "morte", "mortes", "sobrevivem", "pessoas", "número", "casos"],
+        ["sintomas", "graves", "desenvolvem", "critico", "morte", "mortes", "sobrevivem", "pessoas", "número", "casos"],
         "Qual porcentagem dos casos é grave?",
         "A estimativa atual é de que 80% dos casos são leves e 20% são graves. Da população total, 5% entra em estado crítico, e por volta de 1-3% morrem.",
         "BBC", 
@@ -425,7 +426,7 @@ var questions = [
     // 29
     [
         "duas",
-        ["posso", "ser", "infectado", "duas", "várias", "muitas", "vezes", "infeccção", "reinfecção", "recontaminação", "novo", "novamente", "imunidade"],
+        ["posso", "ser", "infectado", "duas", "varias", "muitas", "vezes", "infeccção", "reinfecção", "recontaminação", "novo", "novamente", "imunidade"],
         "Posso ser infectado duas vezes?",
         "Não sabemos ao certo. Especialistas estão trabalhando para descobrir, mas é melhor se prevenir para o pior cenário.",
         "BBC", 
@@ -469,8 +470,8 @@ var questions = [
     ],
     // 34
     [
-        "grávida",
-        ["grávida", "bebê", "mulher", "mulheres", "estou", "útero"],
+        "gravida",
+        ["gravida", "bebê", "mulher", "mulheres", "estou", "útero"],
         "Mulheres grávidas devem se preocupar?",
         "Especialistas e autoridades afirmam não haver motivo para acreditar que mulheres grávidas ou os bebês sejam mais vulneráveis aos efeitos do novo coronavírus do que qualquer outra pessoa. Porém, os cuidados básicos se aplicam à todos.",
         "BBC", 
@@ -503,7 +504,15 @@ var questions = [
         "BBC", 
         "https://www.bbc.com/portuguese/brasil-51673933"
     ],
-    // 38
+    // 38   
+    [
+        "risco",
+        ["indice", "idosos", "risco", "grupos", "grupo", "risco", "afetados", "morte", "estão", "afetado", "população", "parte", "idade"],
+        "Quais grupos estão em risco?",
+        "Idosos e pessoas com asma, diabetes, hipertensão, e outras doenças respiratórias e autoimunes estão em maior risco.",
+        "Prefeitura do Rio de Janeiro",
+        "http://prefeitura.rio/saude/novo-coronavirus-perguntas-e-respostas/"
+    ],
     [
         "ssdfskfdfjc",
         [],
