@@ -90,6 +90,13 @@ input, button
     
 }
 
+.footer {
+    font-family: Helvetica;
+    text-align: center;
+    display: block;
+}
+
+
 form
 {
     height: 96px;
