@@ -1,5 +1,5 @@
 const PCTG_CERTAIN = 70;
-const PCTG_POTENTIAL = 20;
+const PCTG_POTENTIAL = 10;
 
 
 function handleUserInput() {
@@ -33,6 +33,9 @@ function handleButton() {
             }
         }
 
+    }
+    else {
+        responseArea.innerHTML = "<p class='reply-txt'>Clique em uma das sugestões acima. Se não for o que você estiver procurando, tente escrever de outra maneira.</p>";
     }
 }
 
@@ -134,17 +137,17 @@ var d = {
     12: 10,
     13: 13,
     14: 13,
-    15: 13, 
+    15: 13,
     16: 16,
     17: 17,
     18: 18,
     19: 18,
     20: 20,
-    21: 21, 
+    21: 21,
     22: 22,
     23: 23,
     24: 24,
-    25: 25, 
+    25: 25,
     26: 26,
     27: 27,
     28: 28,
@@ -183,7 +186,7 @@ var questions = [
     // 2
     [
         "cura",
-        ["cura", "tratamento", "existe", "tratar", "curar"],
+        ["cura", "tratamento", "existe", "tratar", "curar", "tratar", "sarar", "recuperar", "recuperação", "há"],
         "Existe um tratamento para o COVID-19?",
         "Não há um tratamento específico. No entanto, muitos dos sintomas podem ser tratados e, portanto, o tratamento depende da condição do paciente. Além disso, os cuidados de apoio às pessoas infectadas ajudam muito na recuperação.",
         "Organização Mundial da Saúde (OMS)",
@@ -192,7 +195,7 @@ var questions = [
     // 3
     [
         "vacina",
-        ["vacina", "prevenção", "existe", "previnir", "imunidade"],
+        ["vacina", "prevenção", "existe", "previnir", "imunidade", "vacinas", "previnir", "imunidade"],
         "Existe uma vacina para o novo coronavírus?",
         "Ainda não. Quando uma doença surge, não existe vacina até que uma possa ser desenvolvida após testes em laboratório. Segundo a OMS, este processo pode levar alguns anos.",
         "Organização Mundial da Saúde (OMS)",
@@ -201,7 +204,7 @@ var questions = [
     // 4
     [
         "tratamento",
-        ["cura", "tratamento", "existe", "tratar", "curar"],
+        ["cura", "tratamento", "existe", "tratar", "curar", "tratar", "sarar", "recuperar", "recuperação", "há"],
         "Existe um tratamento para o COVID-19?",
         "Não há um tratamento específico. No entanto, muitos dos sintomas podem ser tratados e, portanto, o tratamento depende da condição do paciente. Além disso, os cuidados de apoio às pessoas infectadas ajudam muito na recuperação.",
         "Organização Mundial da Saúde (OMS)",
@@ -210,7 +213,7 @@ var questions = [
     // 5
     [
         "coronavirus",
-        ["virus", "coronavirus", "tipo", "sars"],
+        ["virus", "coronavirus", "tipo", "sars", "covid19", "coronga", "mers", "doença", "flu", "influenza", "gripe"],
         "O que é um coronavírus?",
         "Os coronavírus são uma grande família de vírus que causam doenças que variam do resfriado comum a doenças mais graves, como a Síndrome Respiratória do Oriente Médio, Mers, e a Síndrome Respiratória Aguda Grave, Sars.",
         "Organização Mundial da Saúde (OMS)",
@@ -219,7 +222,7 @@ var questions = [
     // 6
     [
         "covid19",
-        ["virus", "novo", "covid19", "wuhan", "china", "2019", "coronavirus"],
+        ["virus", "novo", "covid19", "wuhan", "china", "2019", "coronavirus", "tipo", "doença", "epidemia", "pandemia"],
         "O que é o novo coronavírus?",
         "O COVID-19 é um novo tipo de coronavírus que não tinha sido identificado em humanos antes.",
         "Organização Mundial da Saúde (OMS)",
@@ -228,7 +231,7 @@ var questions = [
     // 7
     [
         "coronavirus",
-        ["virus", "novo", "covid19", "wuhan", "china", "2019", "coronavirus"],
+        ["virus", "novo", "covid19", "wuhan", "china", "2019", "coronavirus", "tipo", "doença", "epidemia", "pandemia"],
         "O que é o novo coronavírus?",
         "O COVID-19 é um novo tipo de coronavírus que não tinha sido identificado em humanos antes.",
         "Organização Mundial da Saúde (OMS)",
@@ -237,7 +240,7 @@ var questions = [
     // 8
     [
         "novo",
-        ["virus", "novo", "covid19", "wuhan", "china", "2019", "coronavirus"],
+        ["virus", "novo", "covid19", "wuhan", "china", "2019", "coronavirus", "tipo", "doença", "epidemia", "pandemia"],
         "O que é o novo coronavírus?",
         "O COVID-19 é um novo tipo de coronavírus que não tinha sido identificado em humanos antes.",
         "Organização Mundial da Saúde (OMS)",
@@ -246,7 +249,7 @@ var questions = [
     // 9
     [
         "animal",
-        ["animal", "animais", "infecção", "infectado", "podem", "possivel", "como", "seres", "humanos", "infectados", "pessoa", "origem"],
+        ["animal", "animais", "infecção", "infectado", "podem", "possivel", "como", "seres", "humanos", "infectados", "pessoa", "origem", "morcego", "china", "mercado", "wuhan"],
         "Os seres humanos podem ser infectados com um novo coronavírus de origem animal?",
         "Sim. Investigações detalhadas descobriram que o Sars-CoV foi transmitido das civetas (um mamífero carnívoro de origem asiática) para humanos na China em 2002, e o Mers-CoV de camelos dromedários para humanos na Arábia Saudita em 2012. Vários coronavírus conhecidos estão presentes em animais que ainda não infectaram humanos. À medida que o controle melhora em todo o mundo, é provável que mais coronavírus sejam identificados.",
         "Organização Mundial da Saúde (OMS)",
@@ -255,7 +258,7 @@ var questions = [
     // 10
     [
         "transmissão",
-        ["pessoa", "pode", "transmissão", "transmitido", "comunitaria", "infecção", "contato", "próximo", "humano", "humanos"],
+        ["pessoa", "pode", "transmissão", "transmitido", "comunitaria", "infecção", "contato", "próximo", "humano", "humanos", "para", "comunidade", "tosse", "contato"],
         "O vírus pode ser transmitido de pessoa para pessoa?",
         "Sim. Alguns coronavírus podem ser passados de pessoa para pessoa, geralmente após contato próximo com um paciente infectado, como por exemplo, em casa ou num centro de saúde.",
         "Organização Mundial da Saúde (OMS)",
@@ -264,7 +267,7 @@ var questions = [
     // 11
     [
         "transmitir",
-        ["pessoa", "pode", "transmissão", "transmitido", "comunitaria", "infecção", "contato", "próximo", "humano", "humanos", "contrair"],
+        ["pessoa", "pode", "transmissão", "transmitido", "comunitaria", "infecção", "contato", "próximo", "humano", "humanos", "para", "comunidade", "tosse", "contato"],
         "O vírus pode ser transmitidos de pessoa para pessoa?",
         "Sim. Alguns coronavírus podem ser passados de pessoa para pessoa, geralmente após contato próximo com um paciente infectado, como por exemplo, em casa ou num centro de saúde.",
         "Organização Mundial da Saúde (OMS)",
@@ -273,7 +276,7 @@ var questions = [
     // 12
     [
         "transmitido",
-        ["pessoa", "pode", "transmissão", "transmitido", "comunitaria", "infecção", "contato", "próximo", "humano", "humanos"],
+        ["pessoa", "pode", "transmissão", "transmitido", "comunitaria", "infecção", "contato", "próximo", "humano", "humanos", "para", "comunidade", "tosse", "contato"],
         "O vírus pode ser transmitidos de pessoa para pessoa?",
         "Sim. Alguns coronavírus podem ser passados de pessoa para pessoa, geralmente após contato próximo com um paciente infectado, como por exemplo, em casa ou num centro de saúde.",
         "Organização Mundial da Saúde (OMS)",
@@ -282,7 +285,7 @@ var questions = [
     // 13
     [
         "proteger",
-        ["como", "posso", "me", "proteger", "proteção", "fazer", "recomendação", "recomendado", "precaução", "precauções", "prevenir", "prevenção"],
+        ["como", "posso", "me", "proteger", "proteção", "fazer", "recomendação", "recomendado", "precaução", "precauções", "prevenir", "prevenção", "eu", "imunidade", "prevenção", "medidas", "tomar", "adotar", "lavar", "luva", "mascara"],
         "O que devo fazer para me proteger?",
         "Lavar as mãos regularmente e manter distância de outras pessoas são as melhores maneiras de se proteger. Em muitos países a recomendação é ficar em casa o máximo possível.",
         "Organização Mundial da Saúde (OMS)",
@@ -291,7 +294,7 @@ var questions = [
     // 14
     [
         "proteção",
-        ["como", "posso", "me", "proteger", "proteção", "fazer", "recomendação", "recomendado", "precaução", "precauções", "prevenir", "prevenção"],
+        ["como", "posso", "me", "proteger", "proteção", "fazer", "recomendação", "recomendado", "precaução", "precauções", "prevenir", "prevenção", "eu", "imunidade", "prevenção", "medidas", "tomar", "adotar", "lavar", "luva", "mascara"],
         "O que devo fazer para me proteger?",
         "Lavar as mãos regularmente e manter distância de outras pessoas são as melhores maneiras de se proteger. Em muitos países a recomendação é ficar em casa o máximo possível.",
         "Organização Mundial da Saúde (OMS)",
@@ -300,7 +303,7 @@ var questions = [
     // 15
     [
         "prevenir",
-        ["como", "posso", "me", "proteger", "proteção", "fazer", "recomendação", "recomendado", "precaução", "precauções", "prevenir", "prevenção"],
+        ["como", "posso", "me", "proteger", "proteção", "fazer", "recomendação", "recomendado", "precaução", "precauções", "prevenir", "prevenção", "eu", "imunidade", "prevenção", "medidas", "tomar", "adotar", "lavar", "luva", "mascara"],
         "O que devo fazer para me proteger?",
         "Lavar as mãos regularmente e manter distância de outras pessoas são as melhores maneiras de se proteger. Em muitos países a recomendação é ficar em casa o maximo possível.",
         "Organização Mundial da Saúde (OMS)",
@@ -309,7 +312,7 @@ var questions = [
     // 16
     [
         "agua",
-        ["beber", "agua", "agua", "tomar", "liquido", "15", "minutos", "estômago", "cura", "previne"],
+        ["beber", "agua", "agua", "tomar", "liquido", "15", "minutos", "estômago", "cura", "previne", "mata", "destrói", "elimina"],
         "Tomar líquido de 15 em 15 minutos me impede de contrair o vírus?",
         "Não. Essa é uma mentira que circulou pela internet.",
         "Snopes",
@@ -393,16 +396,16 @@ var questions = [
         ["devo", "usar", "utilizar", "mascara", "n95", "cirúrgica", "vale", "pena", "recomendado", "dia"],
         "Devo usar máscaras no dia-a-dia?",
         "Máscaras devem ser utilizadas apenas por pessoas que estiverem doentes e profissionais da saúde.",
-        "BBC", 
+        "BBC",
         "https://www.bbc.com/portuguese/brasil-51673933"
     ],
     // 26
-        [
+    [
         "hospital",
         ["devo", "ir", "ao", "hospital", "pronto", "socorro", "atendimento", "posto", "saúde", "sintomas", "quando"],
         "Quando devo ir ao hospital?",
         "Você deve ir ao hospital somente se: estiver com dificuldade de respirar ou tenha um sintoma respiratório (exemplo: tosse) e febre por mais de 24 horas.",
-        "BBC", 
+        "BBC",
         "https://www.bbc.com/portuguese/brasil-51673933"
     ],
     // 27
@@ -411,7 +414,7 @@ var questions = [
         ["taxa", "mortalidade", "letal", "quão", "indice", "morte", "chance", "probabilidade", "mortes"],
         "Qual é a taxa de mortalidade do COVID-19?",
         "A taxa de mortalidade varia muito coma a idade mas é estimada no geral entre 1-3%. Ninguém pode saber ao certo. A gripe comum, por sua vez, tem uma taxa de mortalidade de 0.1%.",
-        "BBC", 
+        "BBC",
         "https://www.bbc.com/portuguese/brasil-51673933"
     ],
     // 28
@@ -420,7 +423,7 @@ var questions = [
         ["sintomas", "graves", "desenvolvem", "critico", "morte", "mortes", "sobrevivem", "pessoas", "número", "casos"],
         "Qual porcentagem dos casos é grave?",
         "A estimativa atual é de que 80% dos casos são leves e 20% são graves. Da população total, 5% entra em estado crítico, e por volta de 1-3% morrem.",
-        "BBC", 
+        "BBC",
         "https://www.bbc.com/portuguese/brasil-51673933"
     ],
     // 29
@@ -429,7 +432,7 @@ var questions = [
         ["posso", "ser", "infectado", "duas", "varias", "muitas", "vezes", "infeccção", "reinfecção", "recontaminação", "novo", "novamente", "imunidade"],
         "Posso ser infectado duas vezes?",
         "Não sabemos ao certo. Especialistas estão trabalhando para descobrir, mas é melhor se prevenir para o pior cenário.",
-        "BBC", 
+        "BBC",
         "https://www.bbc.com/portuguese/brasil-51673933"
     ],
     // 30
@@ -438,7 +441,7 @@ var questions = [
         ["transmissão", "infeccção", "infectado", "rapido", "rapida", "como", "acontece", "transmitir", "pegar", "virus", "contaminar", "contaminação", "transmistir", "tosse", "gotículas", "ar", "transmitido", "pegar", "como"],
         "Como ocorre a transmissão?",
         "O vírus é bem contagioso e é transmitido pela contato com as mãos, olhos e boca. Por isso é muito importante lavar as mãos regularmente, evitar tocar o rosto e manter distância de outras pessoas, especialmente as doentes.",
-        "BBC", 
+        "BBC",
         "https://www.bbc.com/portuguese/brasil-51673933"
     ],
     // 31
@@ -447,7 +450,7 @@ var questions = [
         ["quarentena", "lockdown", "significa", "isolamento", "casa", "familiar", "contato", "isolar", "entrar", "14", "dias"],
         "O que significa quarentena? Como entro em quarentena?",
         "Uma pessoa entra em quarentena ao se isolar de outras pessoas por um período determinado. No caso do COVID-19, é recomendado que pessoas doentes entrem em quarentena até estarem curadas. Pessoas que tiveram contato com alguém doente ou viajaram para o exterior devem ficar 14 dias em quarentena. Durante a quarentena, não se deve ter contato físico com qualquer outra pessoa, incluindo familiares. Na maior parte dos casos, a quarentena pode ser feita em casa e monitorada pelo próprio indivíduo, mas em certos casos ela necessita ser feita em um hospital.",
-        "BBC", 
+        "BBC",
         "https://www.bbc.com/portuguese/brasil-51673933"
     ],
     // 32
@@ -456,7 +459,7 @@ var questions = [
         ["morre", "calor", "temperatura", "quente", "alta", "26", "27", "covid19", "virus", "coronavirus", "graus", "acaba", "sobrevive", "não", "verão"],
         "O COVID-19 morre com o calor?",
         "Não sabemos. Alguns outros vírus no passado desapareceram em temperaturas quentes, por várias razões. Porém, ainda não temos prova de que o mesmo irá acontecer com o COVID-19.",
-        "BBC", 
+        "BBC",
         "https://www.bbc.com/portuguese/brasil-51673933"
     ],
     // 33
@@ -465,7 +468,7 @@ var questions = [
         ["gargarejo", "gargarejar", "quente", "cha", "agua", "tomar", "vinagre", "sal", "virus", "coronavirus", "mata"],
         "Tomar chá quente ou gargarejar mata o vírus?",
         "Não. Essa é uma mentira que circulou pela internet.",
-        "BBC", 
+        "BBC",
         "https://www.bbc.com/portuguese/brasil-51673933"
     ],
     // 34
@@ -474,7 +477,7 @@ var questions = [
         ["gravida", "bebê", "mulher", "mulheres", "estou", "útero"],
         "Mulheres grávidas devem se preocupar?",
         "Especialistas e autoridades afirmam não haver motivo para acreditar que mulheres grávidas ou os bebês sejam mais vulneráveis aos efeitos do novo coronavírus do que qualquer outra pessoa. Porém, os cuidados básicos se aplicam à todos.",
-        "BBC", 
+        "BBC",
         "https://www.bbc.com/portuguese/brasil-51673933"
     ],
     // 35
@@ -483,7 +486,7 @@ var questions = [
         ["asma", "condições", "agravam", "agravar", "diabetes", "bronquite", "risco", "fatores", "hipertensão", "hiv", "autoimune", "pulmão", "respiratória"],
         "Quais fatores agravam os sintomas do vírus?",
         "Diabetes, hipertensão, asma, HIV e outras doenças respiratórias e autoimunes podem agravar os sintomas do COVID-19. Se você estiver preocupado(a) com sua condição, fale com seu doutor.",
-        "BBC", 
+        "BBC",
         "https://www.bbc.com/portuguese/brasil-51673933"
     ],
     // 36
@@ -492,7 +495,7 @@ var questions = [
         ["qual", "origem", "onde", "surgiu", "veio", "como", "começou", "wuhan", "morcego"],
         "De onde veio o COVID-19?",
         "A hipótese mais provável é que a epidemia começou em um mercado da cidade chinesa de Wuhan e foi transmitida de um animal vivo para um hospedeiro humano, antes de se espalhar de humano para humano. Uma teoria é de que esse animal foi um morcego.",
-        "BBC", 
+        "BBC",
         "https://www.bbc.com/portuguese/brasil-51673933"
     ],
     // 37
@@ -501,10 +504,19 @@ var questions = [
         ["pet", "cachorro", "gato", "animal", "estimação", "pegar", "transmitir", "cão", "cães", "gatos"],
         "Pets de estimação podem pegar a doença?",
         "Não há qualquer evidência científica de que cães e gatos possam transmitir o novo coronavírus para humanos ou outros animais.",
-        "BBC", 
+        "BBC",
         "https://www.bbc.com/portuguese/brasil-51673933"
     ],
     // 38   
+    [
+        "risco",
+        ["indice", "idosos", "risco", "grupos", "grupo", "risco", "afetados", "morte", "estão", "afetado", "população", "parte", "idade"],
+        "Quais grupos estão em risco?",
+        "Idosos e pessoas com asma, diabetes, hipertensão, e outras doenças respiratórias e autoimunes estão em maior risco.",
+        "Prefeitura do Rio de Janeiro",
+        "http://prefeitura.rio/saude/novo-coronavirus-perguntas-e-respostas/"
+    ],
+    // 39  
     [
         "risco",
         ["indice", "idosos", "risco", "grupos", "grupo", "risco", "afetados", "morte", "estão", "afetado", "população", "parte", "idade"],
@@ -518,7 +530,7 @@ var questions = [
         [],
         "",
         "",
-        "", 
+        "",
         ""
     ],
 ]
