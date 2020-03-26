@@ -161,7 +161,8 @@ var d = {
     36: 36,
     37: 37,
     38: 38,
-    39: 39
+    39: 39,
+    40: 40
 }
 
 var questions = [
@@ -330,7 +331,7 @@ var questions = [
     // 18
     [
         "casos",
-        ["casos", "quantos", "confirmados", "virus", "brasil", "mundo", "indice", "número", "infectados", "infectadas", "pessoas", "quantas", "foram", "tem"],
+        ["casos", "quantos", "confirmados", "virus", "brasil", "mundo", "indice", "número", "infectados", "infectadas", "pessoas", "quantas", "foram", "tem", "doença", "portadores", "portadoras"],
         "Quantos casos da doença existem?",
         "Clique no site abaixo para ver estatísticas do vírus ao vivo.",
         "Covid19stats.live",
@@ -411,7 +412,7 @@ var questions = [
     // 27
     [
         "mortalidade",
-        ["taxa", "mortalidade", "letal", "quão", "indice", "morte", "chance", "probabilidade", "mortes"],
+        ["taxa", "mortalidade", "letal", "quão", "indice", "morte", "chance", "probabilidade", "mortes", "letalidade", "morrer", "quantos", "quantas", "morrem", "morrerão", "vão"],
         "Qual é a taxa de mortalidade do COVID-19?",
         "A taxa de mortalidade varia muito coma a idade mas é estimada no geral entre 1-3%. Ninguém pode saber ao certo. A gripe comum, por sua vez, tem uma taxa de mortalidade de 0.1%.",
         "BBC",
@@ -420,7 +421,7 @@ var questions = [
     // 28
     [
         "grave",
-        ["sintomas", "graves", "desenvolvem", "critico", "morte", "mortes", "sobrevivem", "pessoas", "número", "casos"],
+        ["sintomas", "graves", "desenvolvem", "critico", "morte", "mortes", "sobrevivem", "pessoas", "número", "casos", "quantos", "quantas", "tem", "têm", "possuem", "sintoma", "situação", "crítica"],
         "Qual porcentagem dos casos é grave?",
         "A estimativa atual é de que 80% dos casos são leves e 20% são graves. Da população total, 5% entra em estado crítico, e por volta de 1-3% morrem.",
         "BBC",
@@ -429,7 +430,7 @@ var questions = [
     // 29
     [
         "duas",
-        ["posso", "ser", "infectado", "duas", "varias", "muitas", "vezes", "infeccção", "reinfecção", "recontaminação", "novo", "novamente", "imunidade"],
+        ["posso", "possível", "ser", "infectado", "duas", "varias", "muitas", "vezes", "infeccção", "reinfecção", "recontaminação", "novo", "novamente", "imunidade"],
         "Posso ser infectado duas vezes?",
         "Não sabemos ao certo. Especialistas estão trabalhando para descobrir, mas é melhor se prevenir para o pior cenário.",
         "BBC",
@@ -465,7 +466,7 @@ var questions = [
     // 33
     [
         "gargarejo",
-        ["gargarejo", "gargarejar", "quente", "cha", "agua", "tomar", "vinagre", "sal", "virus", "coronavirus", "mata"],
+        ["gargarejo", "gargarejar", "quente", "cha", "agua", "tomar", "vinagre", "sal", "virus", "coronavirus", "mata", "elimina", "mata"],
         "Tomar chá quente ou gargarejar mata o vírus?",
         "Não. Essa é uma mentira que circulou pela internet.",
         "BBC",
