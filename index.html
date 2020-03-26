@@ -1,216 +1,50 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151884594-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+    <script src="bot.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./main.css">
+    <link rel="icon" type="image/png" href="./virus.png">
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+    <title>Robô do Coronga</title>
 
-        gtag('config', 'UA-151884594-1');
-    </script>
-
-    <meta charset="utf-8" />
-<!--     <link rel="icon" type="image/png" href="./logo/favicon.ico">
- -->    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Sniffer Bot</title>
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0' name='viewport' />
-	<meta name="viewport" content="width=device-width" />
-	<meta name="description" content="A bot to fight fake news concerning the COVID-19 pandemic.">
-	<meta name="keywords" content="coronavirus, covid-19, bot, facebook">
-
-    <link href="./assets/landing-page/assets/css/bootstrap.css" rel="stylesheet" />
-    <link href="./assets/landing-page/assets/css/secondary-pages.css" rel="stylesheet" />
-
-    <!--     Fonts and icons     -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300' rel='stylesheet' type='text/css'>
-
-
-    <style>
-        .main-content {
-            margin-left: -12%;
-        }
-
-        .header-text {
-            line-height: 40px;
-        }
-
-        #lab_social_icon_footer {
-            padding: 40px 0;
-            background-color: #eeeeee;
-        }
-
-        #lab_social_icon_footer a {
-            color: #333;
-        }
-
-
-
-        /*
-    Multicoloured Hover Variations
-*/
-
-        #lab_social_icon_footer #social-fb:hover {
-            color: #3B5998;
-        }
-
-        #lab_social_icon_footer #social-li:hover {
-            color: #2867B2;
-        }
-
-        #lab_social_icon_footer #social-ig:hover {
-            color: #C13584;
-        }
-
-        #lab_social_icon_footer #social-em:hover {
-            color: #f39c12;
-        }
-
-        /* For tiny phones (by today's standards), like iPhone 5 */
-        @media only screen and (max-width: 365px) {
-            .opener {
-                margin-top: 40% !important;
-            }
-
-            .header-text {
-                margin-top: -10%;
-            }
-
-            #main-text {
-                margin-top: 0% !important;
-            }
-
-            .app-image {
-                max-width: 110px !important;
-                margin: 5px !important;
-            }
-
-            .main-content {
-                margin-left: 0 !important;
-            }
-        }
-
-        /* For most phones */
-        @media only screen and (min-width: 365px) and (max-width: 500px) {
-            .opener {
-                margin-top: 40% !important;
-            }
-
-            .header-text {
-                margin-top: -10%;
-            }
-
-            #main-text {
-                margin-top: 0% !important;
-            }
-
-            .app-image {
-                max-width: 140px !important;
-                margin: 5px !important;
-            }
-
-            .main-content {
-                margin-left: 0 !important;
-            }
-        }
-
-        /* For iPads - do people still use them?? */
-        @media only screen and (min-width: 650px) and (max-width: 800px) {
-            #vegan {
-                display: none;
-            }
-
-            #annoying-for-ipads {
-                max-height: 400px;
-            }
-
-            #also-annoying-for-ipads {
-                margin-top: -20%;
-            }
-
-            .phone {
-                display: none;
-            }
-        }
-
-        /* For iPad Pros - do people still use them?? */
-        @media only screen and (min-width: 365px) and (max-width: 1100px) {
-            .opener {
-                margin-top: 40% !important;
-            }
-
-            .main-content {
-                margin-left: 0 !important;
-            }
-
-            #vegan {
-                max-width: 525px !important;
-            }
-        }
-    </style>
-    <noscript><img height="1" width="1" style="display:none"
-            src="https://www.facebook.com/tr?id=2457276534561982&ev=PageView&noscript=1" /></noscript>
 </head>
 
-<body class="landing-page landing-page1">
-
-    <div class="wrapper">
-        <div id="annoying-for-ipads" class="parallax filter-gradient blue" data-color="blue">
-            <div class="parallax-background">
-				<img class="parallax-background-image" src="./assets/landing-page/assets/img/template/bg1.jpg">
-            </div>
-            <div class="container">
-                <div class="row" id="also-annoying-for-ipads">
-
-                    <div class="col-md-12 col-md-offset-1">
-                        <div class="description opener">
-                            <h2>About Sniffer</h2>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="section section-gray section-clients">
-            <div class="container text-center">
-                <h4 class="header-text" id="main-text">Why Sniffer is Important</h4>
-
-                <p>The Sniffer bot aims to make it easier for users to verify the validity of claims made online. As a result
-                    of the COVID-19 pandemic, a lot of misinformation has spread online. Misinformation, coloquially called
-                    "fake news" can be very detrimental to individuals and societies, as information spreads fast and can cause
-                    people to make uninformed and potentially harmful decisions for themselves and others.
-                </p>
-                <p>
-                    Various websites like <a href="https://www.snopes.com/">Snopes</a> work very hard to combat fake news, but 
-                    their impact is limited by the number of users who go out of their way to check the validity of claims. Forwarding messages
-                    on WhatsApp or Facebook Messenger is so easy that users do not bother to go online, access a website and try to verify the 
-                    validity of the claims they plan to forward. 
-                </p>
-                <p>
-                    As such, this bot was created to make it quick and easy to verify the validity of headlines and claims without having to 
-                    exit the chat applications. Sniffer is currently available on Facebook Messenger and we plan on implementing similar versions
-                    for WhatsApp and Twitter in the near future. 
-                </p>
-                <p>
-                    To access Sniffer, click the button below. We would also like to emphasize that the real hard work is done by organizations that
-                    verify the validity of news, while Sniffer is just a tool to help you access their information.
-                </p>
-               <a href="https://www.facebook.com/covid19fakenews"> <button class="btn btn-info">Get Sniffin'</button></a>
-            </div>
-        </div>
-
+<body>
+    <div>
+    <div class="display-set">
+        <h1 id="header-txt">Prazer! Eu sou o Robô do Coronga. 🤖
+        </h1>
+        <p id="secondary-txt">
+            Meu objetivo é responder suas perguntas sobre o novo coronavírus (COVID-19).
+            Digite sua pergunta abaixo e clique nos resultados para ver a resposta.
+        </p>
     </div>
-
-    <script src="./assets/material-bootstrap/assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
-    <script src="./assets/material-bootstrap/assets/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="./assets/material-bootstrap/assets/js/jquery.bootstrap.js" type="text/javascript"></script>
-
+    <div id="cover" class="display-set">
+        <div class="tb">
+            <div class="td"><input type="text" onfocus="document.getElementById('mainInput').value = '';" id="mainInput"
+                    oninput="handleUserInput()" placeholder="Digite sua pergunta aqui..."></div>
+            <div class="td" id="s-cover">
+                <button id="search-btn" onclick="handleButton()">
+                    <div id="s-circle"></div>
+                    <span id="slash"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="predictions" class="display-set">
+        <p class="prediction-txt"><a class="predictions" onclick="selectedQuestion(6)">O que é o novo coronavírus?</a>
+        </p>
+        <p class="prediction-txt"><a class="predictions" onclick="selectedQuestion(5)">O que devo fazer para me
+                proteger?</a></p>
+        <p class="prediction-txt"><a class="predictions" onclick="selectedQuestion(0)">Quais são os sintomas?</a></p>
+    </div>
+    <div id="results" class="display-set"></div>
+    </div>
+</div>
+    </body>
 </body>
-
 
 </html>
