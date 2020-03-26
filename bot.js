@@ -412,7 +412,7 @@ var questions = [
     // 27
     [
         "mortalidade",
-        ["taxa", "mortalidade", "letal", "quão", "indice", "morte",  "estatistica", "dados", "estatisticas", "chance", "probabilidade", "mortes", "letalidade", "morrer", "quantos", "quantas", "morrem", "morrerão", "vão"],
+        ["taxa", "mortalidade", "qual", "letal", "quão", "indice", "morte",  "estatistica", "dados", "estatisticas", "chance", "probabilidade", "mortes", "letalidade", "morrer", "quantos", "quantas", "morrem", "morrerão", "vão"],
         "Qual é a taxa de mortalidade do COVID-19?",
         "A taxa de mortalidade varia muito coma a idade mas é estimada no geral entre 1-3%. Ninguém pode saber ao certo. A gripe comum, por sua vez, tem uma taxa de mortalidade de 0.1%.",
         "BBC",
