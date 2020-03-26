@@ -331,7 +331,7 @@ var questions = [
     // 18
     [
         "casos",
-        ["casos", "quantos", "confirmados", "virus", "brasil", "mundo", "indice", "número", "infectados", "infectadas", "pessoas", "quantas", "foram", "tem", "doença", "portadores", "portadoras"],
+        ["casos", "quantos", "confirmados", "virus", "brasil", "estatistica", "dados", "estatisticas", "mundo", "indice", "número", "infectados", "infectadas", "pessoas", "quantas", "foram", "tem", "doença", "portadores", "portadoras"],
         "Quantos casos da doença existem?",
         "Clique no site abaixo para ver estatísticas do vírus ao vivo.",
         "Covid19stats.live",
@@ -340,7 +340,7 @@ var questions = [
     // 19
     [
         "mundo",
-        ["casos", "confirmados", "virus", "mundo", "indice", "numero", "número", "infectados", "infectadas", "pessoas", "quantas", "foram", "tem"],
+        ["casos", "confirmados", "virus", "mundo", "indice", "numero",  "estatistica", "dados", "estatisticas", "número", "infectados", "infectadas", "pessoas", "quantas", "foram", "tem"],
         "Quantos casos da doença existem?",
         "Existem 488426 casos oficiais no mundo, sendo 2563 desses no Brasil (Atualizado: 26/03/2020). Clique no site abaixo para ver as estatísticas oficiais do vírus ao vivo. Especialistas estimam que os números reais podem ser de 10-40 vezes mais altos.",
         "Covid19stats.live",
@@ -349,7 +349,7 @@ var questions = [
     // 20
     [
         "brasil",
-        ["casos", "confirmados", "virus", "brasil", "mundo", "indice", "número", "infectados", "infectadas", "pessoas", "quantas", "foram", "tem"],
+        ["casos", "confirmados", "virus", "brasil", "mundo",  "estatistica", "dados", "estatisticas", "indice", "número", "infectados", "infectadas", "pessoas", "quantas", "foram", "tem"],
         "Quantos casos da doença existem no Brasil?",
         "Existem 2563 casos confirmados no Brasil, com 60 mortes oficiais (Atualizado: 26/03/2020). Clique no site abaixo para ver as estatísticas oficiais do vírus ao vivo. Especialistas estimam que os números reais podem ser de 10-40 vezes mais altos.",
         "Covid19stats.live",
@@ -358,7 +358,7 @@ var questions = [
     // 21
     [
         "mortes",
-        ["mortes", "confirmados", "virus", "brasil", "mundo", "indice", "número", "mortos", "mortes", "pessoas", "quantas", "foram", "morreram"],
+        ["mortes", "confirmados", "virus", "brasil", "mundo", "indice",  "estatistica", "dados", "estatisticas", "número", "mortos", "mortes", "pessoas", "quantas", "foram", "morreram"],
         "Quantas pessoas já morreram da doença?",
         "22067 mortes oficiais já foram registradas, sendo 60 dessas no Brasil (Atualizado: 26/03/2020). Clique no site abaixo para ver as estatísticas oficiais do vírus ao vivo. Especialistas estimam que os números reais podem ser de 10-40 vezes mais altos.",
         "Covid19stats.live",
@@ -412,7 +412,7 @@ var questions = [
     // 27
     [
         "mortalidade",
-        ["taxa", "mortalidade", "letal", "quão", "indice", "morte", "chance", "probabilidade", "mortes", "letalidade", "morrer", "quantos", "quantas", "morrem", "morrerão", "vão"],
+        ["taxa", "mortalidade", "letal", "quão", "indice", "morte",  "estatistica", "dados", "estatisticas", "chance", "probabilidade", "mortes", "letalidade", "morrer", "quantos", "quantas", "morrem", "morrerão", "vão"],
         "Qual é a taxa de mortalidade do COVID-19?",
         "A taxa de mortalidade varia muito coma a idade mas é estimada no geral entre 1-3%. Ninguém pode saber ao certo. A gripe comum, por sua vez, tem uma taxa de mortalidade de 0.1%.",
         "BBC",
