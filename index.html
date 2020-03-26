@@ -10,41 +10,53 @@
 
     <title>Robô do Coronga</title>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161921642-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-161921642-1');
+    </script>
+
 </head>
 
 <body>
     <div>
-    <div class="display-set">
-        <h1 id="header-txt">Prazer! Eu sou o Robô do Coronga. 🤖
-        </h1>
-        <p id="secondary-txt">
-            Meu objetivo é responder suas perguntas sobre o novo coronavírus (COVID-19).
-            Digite sua pergunta abaixo e clique nos resultados para ver a resposta.
-        </p>
-    </div>
-    <div id="cover" class="display-set">
-        <div class="tb">
-            <div class="td"><input type="text" onfocus="document.getElementById('mainInput').value = '';" id="mainInput"
-                    oninput="handleUserInput()" placeholder="Digite sua pergunta aqui..."></div>
-            <div class="td" id="s-cover">
-                <button id="search-btn" onclick="handleButton()">
-                    <div id="s-circle"></div>
-                    <span id="slash"></span>
-                </button>
+        <div class="display-set">
+            <h1 id="header-txt">Prazer! Eu sou o Robô do Coronga. 🤖
+            </h1>
+            <p id="secondary-txt">
+                Meu objetivo é responder suas perguntas sobre o novo coronavírus (COVID-19).
+                Digite sua pergunta abaixo e clique nos resultados para ver a resposta.
+            </p>
+        </div>
+        <div id="cover" class="display-set">
+            <div class="tb">
+                <div class="td"><input type="text" onfocus="document.getElementById('mainInput').value = '';"
+                        id="mainInput" oninput="handleUserInput()" placeholder="Digite sua pergunta aqui..."></div>
+                <div class="td" id="s-cover">
+                    <button id="search-btn" onclick="handleButton()">
+                        <div id="s-circle"></div>
+                        <span id="slash"></span>
+                    </button>
+                </div>
             </div>
         </div>
+        <div id="predictions" class="display-set">
+            <p class="prediction-txt"><a class="predictions" onclick="selectedQuestion(6)">O que é o novo
+                    coronavírus?</a>
+            </p>
+            <p class="prediction-txt"><a class="predictions" onclick="selectedQuestion(5)">O que devo fazer para me
+                    proteger?</a></p>
+            <p class="prediction-txt"><a class="predictions" onclick="selectedQuestion(0)">Quais são os sintomas?</a>
+            </p>
+        </div>
+        <div id="results" class="display-set"></div>
     </div>
-    <div id="predictions" class="display-set">
-        <p class="prediction-txt"><a class="predictions" onclick="selectedQuestion(6)">O que é o novo coronavírus?</a>
-        </p>
-        <p class="prediction-txt"><a class="predictions" onclick="selectedQuestion(5)">O que devo fazer para me
-                proteger?</a></p>
-        <p class="prediction-txt"><a class="predictions" onclick="selectedQuestion(0)">Quais são os sintomas?</a></p>
     </div>
-    <div id="results" class="display-set"></div>
-    </div>
-</div>
-    </body>
+</body>
 </body>
 
 </html>
