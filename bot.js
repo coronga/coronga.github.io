@@ -511,7 +511,7 @@ var questions = [
     // 38   
     [
         "risco",
-        ["indice", "idosos", "risco", "grupos", "grupo", "risco", "afetados", "morte", "estão", "afetado", "população", "parte", "idade"],
+        ["indice", "idosos", "risco", "grupos", "quem", "mais", "grupo", "risco", "afetados", "morte", "estão", "afetado", "população", "parte", "idade"],
         "Quais grupos estão em risco?",
         "Idosos e pessoas com asma, diabetes, hipertensão, e outras doenças respiratórias e autoimunes estão em maior risco.",
         "Prefeitura do Rio de Janeiro",
