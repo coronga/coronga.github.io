@@ -337,7 +337,7 @@ var questions = [
         "mundo",
         ["casos", "confirmados", "virus", "mundo", "indice", "numero", "número", "infectados", "infectadas", "pessoas", "quantas", "foram", "tem"],
         "Quantos casos da doença existem?",
-        "Clique no site abaixo para ver as estatísticas oficiais do vírus ao vivo. Especialistas estimam que os números reais podem ser de 10-40 vezes mais altos.",
+        "Existem 488426 casos oficiais no mundo, sendo 2563 desses no Brasil (Atualizado: 26/03/2020). Clique no site abaixo para ver as estatísticas oficiais do vírus ao vivo. Especialistas estimam que os números reais podem ser de 10-40 vezes mais altos.",
         "Covid19stats.live",
         "https://covid19stats.live/"
     ],
@@ -346,7 +346,7 @@ var questions = [
         "brasil",
         ["casos", "confirmados", "virus", "brasil", "mundo", "indice", "número", "infectados", "infectadas", "pessoas", "quantas", "foram", "tem"],
         "Quantos casos da doença existem no Brasil?",
-        "Clique no site abaixo para ver as estatísticas oficiais do vírus ao vivo. Especialistas estimam que os números reais podem ser de 10-40 vezes mais altos.",
+        "Existem 2563 casos confirmados no Brasil, com 60 mortes oficiais (Atualizado: 26/03/2020). Clique no site abaixo para ver as estatísticas oficiais do vírus ao vivo. Especialistas estimam que os números reais podem ser de 10-40 vezes mais altos.",
         "Covid19stats.live",
         "https://covid19stats.live/coronavirus/statistics/brazil"
     ],
@@ -355,7 +355,7 @@ var questions = [
         "mortes",
         ["mortes", "confirmados", "virus", "brasil", "mundo", "indice", "número", "mortos", "mortes", "pessoas", "quantas", "foram", "morreram"],
         "Quantas pessoas já morreram da doença?",
-        "Clique no site abaixo para ver as estatísticas oficiais do vírus ao vivo. Especialistas estimam que os números reais podem ser de 10-40 vezes mais altos.",
+        "22067 mortes oficiais já foram registradas, sendo 60 dessas no Brasil (Atualizado: 26/03/2020). Clique no site abaixo para ver as estatísticas oficiais do vírus ao vivo. Especialistas estimam que os números reais podem ser de 10-40 vezes mais altos.",
         "Covid19stats.live",
         "https://covid19stats.live"
     ],
