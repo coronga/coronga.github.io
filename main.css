@@ -283,7 +283,9 @@ button span:before, button span:after
         margin-left: 5%;
         margin-right: 5%;
     }
-
+    p {
+        line-height: 25px !important;
+    }
 
 }
 
@@ -332,5 +334,6 @@ button span:before, button span:after
         margin-right: 6%;
         
     }
+
 
 }
