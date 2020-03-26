@@ -146,14 +146,25 @@ var d = {
     24: 24,
     25: 25, 
     26: 26,
-    27: 27
+    27: 27,
+    28: 28,
+    29: 29,
+    30: 30,
+    31: 31,
+    32: 32,
+    33: 33,
+    34: 34,
+    35: 35,
+    36: 36,
+    37: 37,
+    38: 38
 }
 
 var questions = [
     // 0
     [
         "sintomas",
-        ["sintomas", "virus", "sintmas", "sintoms", "quais", "qual"],
+        ["sintomas", "virus", "sintmas", "sintoms", "quais", "qual", "tosse", "tossindo", "estou", "febre", "dificuldade", "repirar", "repiratório", "garganta", "dor", "espirro"],
         "Quais são os sintomas do vírus?",
         "Os sintomas principais são febre, falta de ar e tosse seca. Em casos mais graves, a infecção pode causar pneumonia, síndrome respiratória, insuficiência renal e até a morte.",
         "Organização Mundial da Saúde (OMS)",
@@ -162,7 +173,7 @@ var questions = [
     // 1
     [
         "sintoma",
-        ["sintomas", "virus", "sintmas", "sintoms", "quais", "qual"],
+        ["sintomas", "virus", "sintmas", "sintoms", "quais", "qual", "tosse", "tossindo", "estou", "febre", "dificuldade", "repirar", "repiratório", "garganta", "dor", "espirro"],
         "Quais são os sintomas do vírus?",
         "Os sintomas principais são febre, falta de ar e tosse seca. Em casos mais graves, a infecção pode causar pneumonia, síndrome respiratória, insuficiência renal e até a morte.",
         "Organização Mundial da Saúde (OMS)",
@@ -386,20 +397,120 @@ var questions = [
     ],
     // 26
         [
-        "abc",
-        [],
-        "ABC",
-        "Máscaras devem ser utilizadas apenas por pessoas que estiverem doentes e profissionais da saúde.",
+        "hospital",
+        ["devo", "ir", "ao", "hospital", "pronto", "socorro", "atendimento", "posto", "saúde", "sintomas", "quando"],
+        "Quando devo ir ao hospital?",
+        "Você deve ir ao hospital somente se: estiver com dificuldade de respirar ou tenha um sintoma respiratório (exemplo: tosse) e febre por mais de 24 horas.",
         "BBC", 
         "https://www.bbc.com/portuguese/brasil-51673933"
     ],
+    // 27
     [
-        "def",
-        [],
-        "DEF",
-        "Máscaras devem ser utilizadas apenas por pessoas que estiverem doentes e profissionais da saúde.",
+        "mortalidade",
+        ["taxa", "mortalidade", "letal", "quão", "indice", "morte", "chance", "probabilidade"],
+        "Qual é a taxa de mortalidade do COVID-19?",
+        "A taxa de mortalidade varia muito coma a idade mas é estimada no geral entre 1-3%. Ninguém pode saber ao certo. A gripe comum, por sua vez, tem uma taxa de mortalidade de 0.1%.",
         "BBC", 
         "https://www.bbc.com/portuguese/brasil-51673933"
+    ],
+    // 28
+    [
+        "grave",
+        ["sintomas", "graves", "desenvolvem", "crítico", "morte", "mortes", "sobrevivem", "pessoas", "número", "casos"],
+        "Qual porcentagem dos casos é grave?",
+        "A estimativa atual é de que 80% dos casos são leves e 20% são graves. Da população total, 5% entra em estado crítico, e por volta de 1-3% morrem.",
+        "BBC", 
+        "https://www.bbc.com/portuguese/brasil-51673933"
+    ],
+    // 29
+    [
+        "duas",
+        ["posso", "ser", "infectado", "duas", "várias", "muitas", "vezes", "infeccção", "reinfecção", "recontaminação", "novo", "novamente", "imunidade"],
+        "Posso ser infectado duas vezes?",
+        "Não sabemos ao certo. Especialistas estão trabalhando para descobrir, mas é melhor se prevenir para o pior cenário.",
+        "BBC", 
+        "https://www.bbc.com/portuguese/brasil-51673933"
+    ],
+    // 30
+    [
+        "transmissão",
+        ["transmissão", "infeccção", "infectado", "rapido", "rapida", "como", "acontece", "transmitir", "pegar", "virus", "contaminar", "contaminação", "transmistir", "tosse", "gotículas", "ar", "transmitido", "pegar", "como"],
+        "Como ocorre a transmissão?",
+        "O vírus é bem contagioso e é transmitido pela contato com as mãos, olhos e boca. Por isso é muito importante lavar as mãos regularmente, evitar tocar o rosto e manter distância de outras pessoas, especialmente as doentes.",
+        "BBC", 
+        "https://www.bbc.com/portuguese/brasil-51673933"
+    ],
+    // 31
+    [
+        "quarentena",
+        ["quarentena", "lockdown", "significa", "isolamento", "casa", "familiar", "contato", "isolar", "entrar", "14", "dias"],
+        "O que significa quarentena? Como entro em quarentena?",
+        "Uma pessoa entra em quarentena ao se isolar de outras pessoas por um período determinado. No caso do COVID-19, é recomendado que pessoas doentes entrem em quarentena até estarem curadas. Pessoas que tiveram contato com alguém doente ou viajaram para o exterior devem ficar 14 dias em quarentena. Durante a quarentena, não se deve ter contato físico com qualquer outra pessoa, incluindo familiares. Na maior parte dos casos, a quarentena pode ser feita em casa e monitorada pelo próprio indivíduo, mas em certos casos ela necessita ser feita em um hospital.",
+        "BBC", 
+        "https://www.bbc.com/portuguese/brasil-51673933"
+    ],
+    // 32
+    [
+        "calor",
+        ["morre", "calor", "temperatura", "quente", "alta", "26", "27", "covid19", "virus", "coronavirus", "graus", "acaba", "sobrevive", "não", "verão"],
+        "O COVID-19 morre com o calor?",
+        "Não sabemos. Alguns outros vírus no passado desapareceram em temperaturas quentes, por várias razões. Porém, ainda não temos prova de que o mesmo irá acontecer com o COVID-19.",
+        "BBC", 
+        "https://www.bbc.com/portuguese/brasil-51673933"
+    ],
+    // 33
+    [
+        "gargarejo",
+        ["gargarejo", "gargarejar", "quente", "cha", "agua", "tomar", "vinagre", "sal", "virus", "coronavirus", "mata"],
+        "Tomar chá quente ou gargarejar mata o vírus?",
+        "Não. Essa é uma mentira que circulou pela internet.",
+        "BBC", 
+        "https://www.bbc.com/portuguese/brasil-51673933"
+    ],
+    // 34
+    [
+        "grávida",
+        ["grávida", "bebê", "mulher", "mulheres", "estou", "útero"],
+        "Mulheres grávidas devem se preocupar?",
+        "Especialistas e autoridades afirmam não haver motivo para acreditar que mulheres grávidas ou os bebês sejam mais vulneráveis aos efeitos do novo coronavírus do que qualquer outra pessoa. Porém, os cuidados básicos se aplicam à todos.",
+        "BBC", 
+        "https://www.bbc.com/portuguese/brasil-51673933"
+    ],
+    // 35
+    [
+        "asma",
+        ["asma", "condições", "agravam", "agravar", "diabetes", "bronquite", "risco", "fatores", "hipertensão", "hiv", "autoimune", "pulmão", "respiratória"],
+        "Quais fatores agravam os sintomas do vírus?",
+        "Diabetes, hipertensão, asma, HIV e outras doenças respiratórias e autoimunes podem agravar os sintomas do COVID-19. Se você estiver preocupado(a) com sua condição, fale com seu doutor.",
+        "BBC", 
+        "https://www.bbc.com/portuguese/brasil-51673933"
+    ],
+    // 36
+    [
+        "origem",
+        ["qual", "origem", "onde", "surgiu", "veio", "como", "começou", "wuhan", "morcego"],
+        "De onde veio o COVID-19?",
+        "A hipótese mais provável é que a epidemia começou em um mercado da cidade chinesa de Wuhan e foi transmitida de um animal vivo para um hospedeiro humano, antes de se espalhar de humano para humano. Uma teoria é de que esse animal foi um morcego.",
+        "BBC", 
+        "https://www.bbc.com/portuguese/brasil-51673933"
+    ],
+    // 37
+    [
+        "cachorro",
+        ["pet", "cachorro", "gato", "animal", "estimação", "pegar", "transmitir", "cão", "cães", "gatos"],
+        "Pets de estimação podem pegar a doença?",
+        "Não há qualquer evidência científica de que cães e gatos possam transmitir o novo coronavírus para humanos ou outros animais.",
+        "BBC", 
+        "https://www.bbc.com/portuguese/brasil-51673933"
+    ],
+    // 38
+    [
+        "ssdfskfdfjc",
+        [],
+        "",
+        "",
+        "", 
+        ""
     ],
 ]
 
