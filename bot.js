@@ -624,7 +624,7 @@ var questions = [
         "incubação",
         ["tempo", "período", "incubação", "quanto", "tempo", "até", "aparecerem", "sintomas", "demora", "para", "aparecer", "duração", "14", "dias"],
         "Qual é o período de incubação do COVID-19?",
-        "Em média os sintomas aparecem por volta de 5 dias após a contaminação, mas podem demorar até 14 dias. Portanto, se você esteve em contato com o vírus, é aconselhado que fique em quarentena por 14 dias.",
+        "Em média os sintomas aparecem por volta de 5 dias após a contaminação, mas podem demorar até 14 dias. Portanto, se você esteve em contato com o vírus, é aconselhado que fique em <a onclick='selectedQuestion(31)'>quarentena</a> por 14 dias.",
         "UOL Notícias",
         "https://noticias.uol.com.br/saude/ultimas-noticias/redacao/2020/03/17/tempo-de-incubacao-do-covid-19-e-menor-e-sp-sugere-reduzir-quarentena.htm"
     ],
