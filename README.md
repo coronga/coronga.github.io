@@ -1,6 +1,6 @@
 # contraovirus.com.br
 
-## Deploy this bot for your own language!
+## Deploy this bot in your language!
 
 You are not only welcome, but also encouraged to deploy this bot in your own language. The bot is completely serverless, so you can host it for free on Github Pages, for example. You are welcome to style it as you wish, and all I ask for is that you keep the footer note stating that this was "Originally built in Portuguese by Yakko Majuri" and the disclaimer that states that the information by the bot cannot constitute medical advice. It goes without saying that if you use this code you can't then blame me for issues and problems that arise along the way - you can see this formally written in the LICENSE.
 
