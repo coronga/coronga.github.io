@@ -580,7 +580,7 @@ var questions = [
         ["posso", "febre", "sintomas", "virus", "covid19", "coronavirus", "cuidar", "recuperar", "dipirona", "tosse", "tomar", "ibuprofeno", "paracetamol", "qual", "melhor", "devo", "sugerido", "melhor", "recomendado", "ibuprofen", "remédio", "pílula", "medicamento", "medicação", "tratar", "medicar", "tossindo", "estou", "febre"],
         "Qual remédio devo tomar para tratar os sintomas?",
         "O porta-voz da Organização Mundial da Saúde (OMS) recomendou que pessoas infectadas com o COVID-19 tomassem <b>paracetamol</b>, se forem se auto-medicar. Sempre consulte com seu médico antes de tomar qualquer medicamento.",
-        "",
+        "UOL Viva Bem",
         "https://www.uol.com.br/vivabem/noticias/bbc/2020/03/17/coronavirus-o-que-se-sabe-sobre-o-uso-do-ibuprofeno-para-tratar-sintomas-da-doenca.htm"
     ],
     // 43
