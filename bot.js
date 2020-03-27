@@ -192,7 +192,11 @@ var d = {
     44: 44,
     45: 45,
     46: 46,
-    47: 47
+    47: 47,
+    48: 48,
+    49: 49,
+    50: 50,
+    51: 51
 }
 
 var questions = [
@@ -629,6 +633,24 @@ var questions = [
         "https://noticias.uol.com.br/saude/ultimas-noticias/redacao/2020/03/17/tempo-de-incubacao-do-covid-19-e-menor-e-sp-sugere-reduzir-quarentena.htm"
     ],
     // 48
+    [
+        "microondas",
+        ["delivery", "comida", "microondas", "takeout", "take", "out", "entrega", "esquentar", "esquenta", "pedir", "almoço", "jantar", "marmita", "uber", "eats"],
+        "Posso comer comida de delivery?",
+        "Sim, mas com alguns cuidados. É recomendado trocar a caixa da comida por uma caixa limpa, desinfetar as mãos e esquentar a comida no microondas até ela estar bem quente (queimando a boca).",
+        "Serious Eats",
+        "https://www.seriouseats.com/2020/03/food-safety-and-coronavirus-a-comprehensive-guide.html#chinese-food"
+    ],
+    // 49
+    [
+        "superficies",
+        ["superficies", "superficie", "tempo", "fica", "dura", "vive", "roupa", "papelão", "plastico", "virus", "coronavirus", "covid19", "sobrevive"],
+        "Por quanto tempo o vírus sobrevive em superfícies?",
+        "Não se sabe ao certo, mas víruses similares, em média, podem sobreviver entre quatro e cinco dias em materiais como alumínio, madeira, papel, plástico e vidro.",
+        "Olhar Digital",
+        "https://olhardigital.com.br/coronavirus/noticia/estudo-mostra-quanto-tempo-o-coronavirus-sobrevive-em-uma-superficie/96727"
+    ],
+    // 50
     [
         "asdhsfdkfsdd",
         [],
