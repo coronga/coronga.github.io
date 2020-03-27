@@ -27,6 +27,9 @@ function handleButton() {
     var results = [0, 2, 3];
     if (responseArea.innerHTML == "" && predictions.innerHTML == "") {
         for (var i = 0; i < results.length; i++) {
+            if (i == 6) {
+                break;
+            }
             reply += '<p class="prediction-txt"><a class="predictions" onclick="selectedQuestion(' + results[i] + ')">' + questions[results[i]][2] + '</a></p>';
             if (i == results.length - 1) {
                 predictions.innerHTML = reply;
