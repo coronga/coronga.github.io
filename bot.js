@@ -571,7 +571,7 @@ var questions = [
         ["posso", "febre", "sintomas", "virus", "covid19", "coronavirus", "cuidar", "recuperar", "dipirona", "tosse", "tomar", "ibuprofeno", "paracetamol", "qual", "melhor", "devo", "sugerido", "melhor", "recomendado", "ibuprofen", "remédio", "pílula", "medicamento", "medicação", "tratar", "medicar", "tossindo", "estou", "febre"],
         "Qual remédio devo tomar para tratar os sintomas?",
         "O porta-voz da Organização Mundial da Saúde (OMS) recomendou que pessoas infectadas com o COVID-19 tomassem <b>paracetamol</b>, se forem se auto-medicar. Sempre consulte com seu médico antes de tomar qualquer medicamento.",
-        "",
+        "UOL Viva Bem",
         "https://www.uol.com.br/vivabem/noticias/bbc/2020/03/17/coronavirus-o-que-se-sabe-sobre-o-uso-do-ibuprofeno-para-tratar-sintomas-da-doenca.htm"
     ],
     // 42
@@ -620,6 +620,15 @@ var questions = [
         "https://news.un.org/pt/story/2020/01/1702002"
     ],
     // 47
+    [
+        "incubação",
+        ["tempo", "período", "incubação", "quanto", "tempo", "até", "aparecerem", "sintomas", "demora", "para", "aparecer", "duração", "14", "dias"],
+        "Qual é o período de incubação do COVID-19?",
+        "Em média os sintomas aparecem por volta de 5 dias após a contaminação, mas podem demorar até 14 dias. Portanto, se você esteve em contato com o vírus, é aconselhado que fique em quarentena por 14 dias.",
+        "UOL Notícias",
+        "https://noticias.uol.com.br/saude/ultimas-noticias/redacao/2020/03/17/tempo-de-incubacao-do-covid-19-e-menor-e-sp-sugere-reduzir-quarentena.htm"
+    ],
+    // 48
     [
         "asdhsfdkfsdd",
         [],
