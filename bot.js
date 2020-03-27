@@ -439,7 +439,7 @@ var questions = [
         "hospital",
         ["devo", "ir", "ao", "hospital", "pronto", "socorro", "atendimento", "posto", "saúde", "sintomas", "quando"],
         "Quando devo ir ao hospital?",
-        "Você deve ir ao hospital somente se: estiver com dificuldade de respirar ou tenha um sintoma respiratório (exemplo: tosse) e febre por mais de 24 horas.",
+        "De acordo com as recomendações, você deve ir ao hospital somente se: estiver com dificuldade de respirar ou tenha um sintoma respiratório (exemplo: tosse) e febre por mais de 24 horas. Porém, se sentir que precisa de atendimento, nunca hesite em buscá-lo. Consulte um médico sempre que estiver em dúvida.",
         "BBC",
         "https://www.bbc.com/portuguese/brasil-51673933"
     ],
