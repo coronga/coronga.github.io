@@ -273,8 +273,8 @@ var questions = [
     [
         "animal",
         ["animal", "animais", "infecção", "infectado", "podem", "possivel", "como", "seres", "humanos", "infectados", "pessoa", "origem", "morcego", "china", "mercado", "wuhan"],
-        "Os seres humanos podem ser infectados com um novo coronavírus de origem animal?",
-        "Sim. Investigações detalhadas descobriram que o Sars-CoV foi transmitido das civetas (um mamífero carnívoro de origem asiática) para humanos na China em 2002, e o Mers-CoV de camelos dromedários para humanos na Arábia Saudita em 2012. Vários coronavírus conhecidos estão presentes em animais que ainda não infectaram humanos. À medida que o controle melhora em todo o mundo, é provável que mais coronavírus sejam identificados.",
+        "Os seres humanos podem ser infectados por um coronavírus de origem animal?",
+        "Sim. Investigações detalhadas descobriram que o Sars-CoV foi transmitido das civetas (um mamífero asiático) para humanos na China em 2002, e o Mers-CoV de camelos dromedários para humanos na Arábia Saudita em 2012. Vários coronavírus conhecidos estão presentes em animais que ainda não infectaram humanos. À medida que o controle melhora em todo o mundo, é provável que mais coronavírus sejam identificados.",
         "Organização Mundial da Saúde (OMS)",
         "https://news.un.org/pt/story/2020/01/1702002"
     ],
@@ -389,7 +389,7 @@ var questions = [
     // 22
     [
         "crianças",
-        ["indice", "crianças", "risco", "mortes", "idade", "novos", "mais", "jovens", "estão"],
+        ["indice", "crianças", "risco", "mortes", "idade", "novos", "mais", "jovens", "estão", "afetado", "afetados"],
         "Crianças e jovens estão em risco?",
         "O vírus pode causar problemas independente da idade. Porém, a maior parte dos casos graves e mortes afetam os idosos.",
         "Prefeitura do Rio de Janeiro",
@@ -398,7 +398,7 @@ var questions = [
     // 23
     [
         "idosos",
-        ["indice", "idosos", "risco", "mortes", "idade", "velhos", "avós", "morte", "estão"],
+        ["indice", "idosos", "risco", "mortes", "idade", "velhos", "avós", "morte", "estão", "afetado", "afetados"],
         "Idosos estão em risco?",
         "Sim. A maior parte dos casos graves e mortes afetam os idosos. Acima dos 60 anos, o índice de mortalidade da doença aumenta significantemente.",
         "Prefeitura do Rio de Janeiro",
@@ -533,7 +533,7 @@ var questions = [
     // 38   
     [
         "risco",
-        ["indice", "idosos", "risco", "grupos", "quem", "mais", "grupo", "risco", "afetados", "morte", "estão", "afetado", "população", "parte", "idade"],
+        ["indice", "idosos", "risco", "grupos", "quem", "mais", "grupo", "risco", "quais", "qual", "afetados", "morte", "estão", "afetado", "população", "parte", "idade"],
         "Quais grupos estão em risco?",
         "Idosos e pessoas com asma, diabetes, hipertensão, e outras doenças respiratórias e autoimunes estão em maior risco.",
         "Prefeitura do Rio de Janeiro",
@@ -560,7 +560,7 @@ var questions = [
     // 41
     [
         "remédio",
-        ["posso", "febre", "sintomas", "cuidar", "recuperar", "dipirona", "tosse", "tomar", "ibuprofeno", "paracetamol", "qual", "melhor", "devo", "sugerido", "melhor", "recomendado", "ibuprofen", "remédio", "pílula", "medicamento", "medicação", "tratar", "medicar"],
+        ["posso", "febre", "sintomas", "virus", "covid19", "coronavirus", "cuidar", "recuperar", "dipirona", "tosse", "tomar", "ibuprofeno", "paracetamol", "qual", "melhor", "devo", "sugerido", "melhor", "recomendado", "ibuprofen", "remédio", "pílula", "medicamento", "medicação", "tratar", "medicar"],
         "Qual remédio devo tomar para tratar os sintomas?",
         "O porta-voz da Organização Mundial da Saúde (OMS) recomendou que pessoas infectadas com o COVID-19 tomassem <b>paracetamol</b>, se forem se auto-medicar. Sempre consulte com seu médico antes de tomar qualquer medicamento.",
         "",
@@ -569,7 +569,7 @@ var questions = [
     // 42
     [
         "medicamento",
-        ["posso", "febre", "sintomas", "cuidar", "recuperar", "dipirona", "tosse", "tomar", "ibuprofeno", "paracetamol", "qual", "melhor", "devo", "sugerido", "melhor", "recomendado", "ibuprofen", "remédio", "pílula", "medicamento", "medicação", "tratar", "medicar"],
+        ["posso", "virus", "covid19", "coronavirus", "febre", "sintomas", "cuidar", "recuperar", "dipirona", "tosse", "tomar", "ibuprofeno", "paracetamol", "qual", "melhor", "devo", "sugerido", "melhor", "recomendado", "ibuprofen", "remédio", "pílula", "medicamento", "medicação", "tratar", "medicar"],
         "Qual remédio devo tomar para tratar os sintomas?",
         "O porta-voz da Organização Mundial da Saúde (OMS) recomendou que pessoas infectadas com o COVID-19 tomassem <b>paracetamol</b>, se forem se auto-medicar. Sempre consulte com seu médico antes de tomar qualquer medicamento.",
         "",
