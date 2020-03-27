@@ -61,7 +61,7 @@ function selectedQuestion(n) {
     predictions.innerHTML = "";
     responseArea.innerHTML = '<p class="reply-title">' + questions[n][2] + '</p><p class="reply-txt">' + questions[n][3] + '</p><p class="reply-txt">Mais informações: <a target="_blank" href="' + questions[n][5] + '">' + questions[n][4] + '</a></p>';
 }
-
+/* 
 function primaryParser(parsedInput) {
     var resultIndexes = [];
     var secondaryMatches = {};
@@ -86,10 +86,28 @@ function primaryParser(parsedInput) {
             secondaryParser(parsedInput, secondaryMatches);
         }
     }
+} */
+
+function primaryParser(parsedInput) {
+    var matches = {};
+    for (var i = 0; i < questions.length; i++) {
+        var notInOverlap = parsedInput.filter(term => !questions[i][1].includes(term));
+        var coverage = ((parsedInput.length - notInOverlap.length) * 100 / parsedInput.length);
+        if (parsedInput.indexOf(questions[i][0]) != -1 || coverage > PCTG_POTENTIAL) {
+            matches[coverage+Math.random()] = d[i];
+        }
+        if (i == questions.length - 1) {
+            secondaryParser(parsedInput, matches);
+        }
+    }
 }
 
+
+
 function secondaryParser(parsedInput, secondaryMatches) {
-    if (secondaryMatches.length == 0) {
+    console.log(JSON.stringify(secondaryMatches));
+    console.log(Object.size(secondaryMatches));
+    if (Object.size(secondaryMatches) == 0) {
         tertiaryParser(parsedInput);
     }
     else {
@@ -102,13 +120,15 @@ function secondaryParser(parsedInput, secondaryMatches) {
 }
 
 function tertiaryParser(parsedInput) {
+    console.log(parsedInput);
     var results = [];
     for (var i = 0; i < questions.length; i++) {
-        var chars = parsedInput[j].split('');
         for (var j = 0; j < parsedInput.length; j++) {
-            var notInOverlap = questions[1].split('').filter(char => chars.indexOf(char) == -1);
+            var chars = parsedInput[j].split('');
+            var notInOverlap = questions[i][0].split('').filter(char => chars.indexOf(char) == -1);
             var coverage = ((chars.length - notInOverlap.length) * 100 / chars.length);
-            if (coverage > 85) {
+            console.log(questions[i][0], coverage);
+            if (coverage >= 90) {
                 results.push(d[i]);
                 printOptions(results);
                 break;
@@ -162,7 +182,9 @@ var d = {
     37: 37,
     38: 38,
     39: 39,
-    40: 40
+    40: 40,
+    41: 41,
+    42: 41
 }
 
 var questions = [
@@ -214,7 +236,7 @@ var questions = [
     // 5
     [
         "coronavirus",
-        ["virus", "coronavirus", "tipo", "sars", "covid19", "coronga", "mers", "doença", "flu", "influenza", "gripe"],
+        ["virus", "coronavirus", "tipo", "sars", "covid19", "coronga", "mers", "doença", "flu", "influenza", "gripe", "sarscov2"],
         "O que é um coronavírus?",
         "Os coronavírus são uma grande família de vírus que causam doenças que variam do resfriado comum a doenças mais graves, como a Síndrome Respiratória do Oriente Médio, Mers, e a Síndrome Respiratória Aguda Grave, Sars.",
         "Organização Mundial da Saúde (OMS)",
@@ -223,7 +245,7 @@ var questions = [
     // 6
     [
         "covid19",
-        ["virus", "novo", "covid19", "wuhan", "china", "2019", "coronavirus", "tipo", "doença", "epidemia", "pandemia"],
+        ["virus", "novo", "covid19", "wuhan", "china", "2019", "coronavirus", "tipo", "doença", "epidemia", "pandemia", "sarscov2"],
         "O que é o novo coronavírus?",
         "O COVID-19 é um novo tipo de coronavírus que não tinha sido identificado em humanos antes.",
         "Organização Mundial da Saúde (OMS)",
@@ -502,7 +524,7 @@ var questions = [
     // 37
     [
         "cachorro",
-        ["pet", "cachorro", "gato", "animal", "estimação", "pegar", "transmitir", "cão", "cães", "gatos"],
+        ["pet", "cachorro", "gato", "animal", "estimação", "doméstico", "animal", "animais", "pegar", "transmitir", "cão", "cães", "gatos"],
         "Pets de estimação podem pegar a doença?",
         "Não há qualquer evidência científica de que cães e gatos possam transmitir o novo coronavírus para humanos ou outros animais.",
         "BBC",
@@ -519,22 +541,50 @@ var questions = [
     ],
     // 39  
     [
-        "risco",
-        ["indice", "idosos", "risco", "grupos", "grupo", "risco", "afetados", "morte", "estão", "afetado", "população", "parte", "idade"],
-        "Quais grupos estão em risco?",
-        "Idosos e pessoas com asma, diabetes, hipertensão, e outras doenças respiratórias e autoimunes estão em maior risco.",
-        "Prefeitura do Rio de Janeiro",
-        "http://prefeitura.rio/saude/novo-coronavirus-perguntas-e-respostas/"
+        "existia",
+        ["virus", "coronavirus", "tipo", "sars", "covid19", "coronga", "ja", "doença", "flu", "existia", "antes", "nasceu", "novo", "existiu", "quando", "apareceu", "2019"],
+        "O COVID-19 já existia antes de 2019?",
+        "Sim. O vírus denominado COVID-19 já existia em animais. Porém, em 2019, foi a primeira vez que um humano foi infectado por esse vírus específico, após contato com animais em Wuhan, na China.",
+        "BBC",
+        "https://www.bbc.com/portuguese/brasil-51673933"
     ],
+    // 40
     [
-        "ssdfskfdfjc",
-        [],
+        "ibuprofeno",
+        ["posso", "tomar", "ibuprofeno", "paracetamol", "qual", "melhor", "devo", "sugerido", "melhor", "recomendado", "ibuprofen", "remédio", "pílula", "medicamento", "medicação", "tratar", "medicar"],
+        "Tenho COVID-19, posso tomar ibuprofeno?",
+        "O porta-voz da Organização Mundial da Saúde (OMS) recomendou que pessoas infectadas com o COVID-19 tomassem outros remédios, especialmente o paracetamol, ao invés do ibuprofeno. No entanto, a OMS não proibiu formalmente o remédio e os estudos sobre seus efeitos estão em andamento. Sempre consulte com seu médico antes de tomar qualquer medicamento.",
         "",
+        "https://www.uol.com.br/vivabem/noticias/bbc/2020/03/17/coronavirus-o-que-se-sabe-sobre-o-uso-do-ibuprofeno-para-tratar-sintomas-da-doenca.htm"
+    ],
+    // 41
+    [
+        "remédio",
+        ["posso", "febre", "sintomas", "cuidar", "recuperar", "dipirona", "tosse", "tomar", "ibuprofeno", "paracetamol", "qual", "melhor", "devo", "sugerido", "melhor", "recomendado", "ibuprofen", "remédio", "pílula", "medicamento", "medicação", "tratar", "medicar"],
+        "Qual remédio devo tomar para tratar os sintomas?",
+        "O porta-voz da Organização Mundial da Saúde (OMS) recomendou que pessoas infectadas com o COVID-19 tomassem <b>paracetamol</b>, se forem se auto-medicar. Sempre consulte com seu médico antes de tomar qualquer medicamento.",
         "",
+        "https://www.uol.com.br/vivabem/noticias/bbc/2020/03/17/coronavirus-o-que-se-sabe-sobre-o-uso-do-ibuprofeno-para-tratar-sintomas-da-doenca.htm"
+    ],
+    // 42
+    [
+        "medicamento",
+        ["posso", "febre", "sintomas", "cuidar", "recuperar", "dipirona", "tosse", "tomar", "ibuprofeno", "paracetamol", "qual", "melhor", "devo", "sugerido", "melhor", "recomendado", "ibuprofen", "remédio", "pílula", "medicamento", "medicação", "tratar", "medicar"],
+        "Qual remédio devo tomar para tratar os sintomas?",
+        "O porta-voz da Organização Mundial da Saúde (OMS) recomendou que pessoas infectadas com o COVID-19 tomassem <b>paracetamol</b>, se forem se auto-medicar. Sempre consulte com seu médico antes de tomar qualquer medicamento.",
         "",
-        ""
+        "https://www.uol.com.br/vivabem/noticias/bbc/2020/03/17/coronavirus-o-que-se-sabe-sobre-o-uso-do-ibuprofeno-para-tratar-sintomas-da-doenca.htm"
     ],
 ]
 
 
 var wordsToIgnore = ["são", "é", "do", "da", "com", "e", "que", "quê", "por", "para", "o", "a", "os", "as", "um", "de", "oq", "pq", "vc", "q"];
+
+
+Object.size = function(obj) {
+    var size = 0, key;
+    for (key in obj) {
+        if (obj.hasOwnProperty(key)) size++;
+    }
+    return size;
+};
