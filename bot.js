@@ -94,7 +94,7 @@ function primaryParser(parsedInput) {
         var notInOverlap = parsedInput.filter(term => !questions[i][1].includes(term));
         var coverage = ((parsedInput.length - notInOverlap.length) * 100 / parsedInput.length);
         if (parsedInput.indexOf(questions[i][0]) != -1 || coverage > PCTG_POTENTIAL) {
-            matches[coverage+Math.random()] = d[i];
+            matches[coverage + Math.random()] = d[i];
         }
         if (i == questions.length - 1) {
             secondaryParser(parsedInput, matches);
@@ -184,7 +184,12 @@ var d = {
     39: 39,
     40: 40,
     41: 41,
-    42: 41
+    42: 41,
+    43: 43,
+    44: 44,
+    45: 45,
+    46: 46,
+    47: 47
 }
 
 var questions = [
@@ -362,27 +367,27 @@ var questions = [
     // 19
     [
         "mundo",
-        ["casos", "confirmados", "virus", "mundo", "indice", "numero",  "estatistica", "dados", "estatisticas", "número", "infectados", "infectadas", "pessoas", "quantas", "foram", "tem"],
+        ["casos", "confirmados", "virus", "mundo", "indice", "numero", "estatistica", "dados", "estatisticas", "número", "infectados", "infectadas", "pessoas", "quantas", "foram", "tem"],
         "Quantos casos da doença existem?",
-        "Existem 488426 casos oficiais no mundo, sendo 2563 desses no Brasil (Atualizado: 26/03/2020). Clique no site abaixo para ver as estatísticas oficiais do vírus ao vivo. Especialistas estimam que os números reais podem ser de 10-40 vezes mais altos.",
+        "Existem 537017 casos oficiais no mundo, sendo 2985 desses no Brasil (Atualizado: 27/03/2020). Clique no site abaixo para ver as estatísticas oficiais do vírus ao vivo. Especialistas estimam que os números reais podem ser de 10-40 vezes mais altos.",
         "Covid19stats.live",
         "https://covid19stats.live/"
     ],
     // 20
     [
         "brasil",
-        ["casos", "confirmados", "virus", "brasil", "mundo",  "estatistica", "dados", "estatisticas", "indice", "número", "infectados", "infectadas", "pessoas", "quantas", "foram", "tem"],
+        ["casos", "confirmados", "virus", "brasil", "mundo", "estatistica", "dados", "estatisticas", "indice", "número", "infectados", "infectadas", "pessoas", "quantas", "foram", "tem"],
         "Quantos casos da doença existem no Brasil?",
-        "Existem 2563 casos confirmados no Brasil, com 60 mortes oficiais (Atualizado: 26/03/2020). Clique no site abaixo para ver as estatísticas oficiais do vírus ao vivo. Especialistas estimam que os números reais podem ser de 10-40 vezes mais altos.",
+        "Existem 2985 casos confirmados no Brasil, com 77 mortes oficiais (Atualizado: 27/03/2020). Clique no site abaixo para ver as estatísticas oficiais do vírus ao vivo. Especialistas estimam que os números reais podem ser de 10-40 vezes mais altos.",
         "Covid19stats.live",
         "https://covid19stats.live/coronavirus/statistics/brazil"
     ],
     // 21
     [
         "mortes",
-        ["mortes", "confirmados", "virus", "brasil", "mundo", "indice",  "estatistica", "dados", "estatisticas", "número", "mortos", "mortes", "pessoas", "quantas", "foram", "morreram"],
+        ["mortes", "confirmados", "virus", "brasil", "mundo", "indice", "estatistica", "dados", "estatisticas", "número", "mortos", "mortes", "pessoas", "quantas", "foram", "morreram"],
         "Quantas pessoas já morreram da doença?",
-        "22067 mortes oficiais já foram registradas, sendo 60 dessas no Brasil (Atualizado: 26/03/2020). Clique no site abaixo para ver as estatísticas oficiais do vírus ao vivo. Especialistas estimam que os números reais podem ser de 10-40 vezes mais altos.",
+        "24117 mortes oficiais já foram registradas, sendo 77 dessas no Brasil (Atualizado: 27/03/2020). Clique no site abaixo para ver as estatísticas oficiais do vírus ao vivo. Especialistas estimam que os números reais podem ser de 10-40 vezes mais altos.",
         "Covid19stats.live",
         "https://covid19stats.live"
     ],
@@ -434,7 +439,7 @@ var questions = [
     // 27
     [
         "mortalidade",
-        ["taxa", "mortalidade", "qual", "letal", "quão", "indice", "morte",  "estatistica", "dados", "estatisticas", "chance", "probabilidade", "mortes", "letalidade", "morrer", "quantos", "quantas", "morrem", "morrerão", "vão"],
+        ["taxa", "mortalidade", "qual", "letal", "quão", "indice", "morte", "estatistica", "dados", "estatisticas", "chance", "probabilidade", "mortes", "letalidade", "morrer", "quantos", "quantas", "morrem", "morrerão", "vão"],
         "Qual é a taxa de mortalidade do COVID-19?",
         "A taxa de mortalidade varia muito coma a idade mas é estimada no geral entre 1-3%. Ninguém pode saber ao certo. A gripe comum, por sua vez, tem uma taxa de mortalidade de 0.1%.",
         "BBC",
@@ -575,13 +580,58 @@ var questions = [
         "",
         "https://www.uol.com.br/vivabem/noticias/bbc/2020/03/17/coronavirus-o-que-se-sabe-sobre-o-uso-do-ibuprofeno-para-tratar-sintomas-da-doenca.htm"
     ],
+    // 43
+    [
+        "brasil",
+        ["mortes", "confirmados", "virus", "brasil", "país", "brasileiros", "brasileiras", "indice", "estatistica", "dados", "estatisticas", "número", "mortos", "mortes", "pessoas", "quantas", "foram", "morreram"],
+        "Quantas pessoas já morreram da doença no Brasil?",
+        "77 mortes oficiais foram registradas no Brasil (Atualizado: 27/03/2020). Clique no site abaixo para ver as estatísticas oficiais do vírus ao vivo. Especialistas estimam que os números reais podem ser de 10-40 vezes mais altos.",
+        "Covid19stats.live",
+        "https://covid19stats.live"
+    ],
+    // 44
+    [
+        "febre",
+        ["estou", "com", "febre", "febril", "38", "39", "40", "graus", "tenho", "sintoma", "sintomas"],
+        "Estou com febre. Tenho coronavírus?",
+        "Febre é um dos sintomas do COVID-19 assim como de várias outras doenças. No caso do novo coronavírus, a febre é muitas vezes acompanhada por tosse seca e dificuldade de respirar. Se você estiver preocupado(a), fale com um médico imediatamente.",
+        "Organização Mundial da Saúde (OMS)",
+        "https://news.un.org/pt/story/2020/01/1702002"
+    ],
+    // 45
+    [
+        "tossindo",
+        ["estou", "com", "tosse", "tossindo", "seca", "muco", "catarro", "tusso", "tenho", "sintoma", "sintomas"],
+        "Estou tossindo. Tenho coronavírus?",
+        "Tosse é um dos sintomas do COVID-19 assim como de várias outras doenças. No caso do novo coronavírus, a tosse normalmente é seca e sem catarro, e é muitas vezes acompanhada por febre e dificuldade de respirar. Se você estiver preocupado(a), fale com um médico imediatamente.",
+        "Organização Mundial da Saúde (OMS)",
+        "https://news.un.org/pt/story/2020/01/1702002"
+    ],
+    // 46
+    [
+        "dificuldade",
+        ["estou", "com", "dificuldade", "respirar", "de", "problema", "respiração", "não", "consigo", "respirar", "direito", "problema", "repiratório", "falta", "ar"],
+        "Estou com dificuldade de respirar. Tenho coronavírus?",
+        "Se você estiver com dificuldade de respirar ou falta de ar fale com um médico <b>imediatamente</b>. Além de ser um sintoma clássico do COVID-19, é uma condição séria que precisa de tratamento independemente.",
+        "Organização Mundial da Saúde (OMS)",
+        "https://news.un.org/pt/story/2020/01/1702002"
+    ],
+    // 47
+    [
+        "asdhsfdkfsdd",
+        [],
+        "",
+        "",
+        "",
+        ""
+    ],
 ]
 
 
 var wordsToIgnore = ["são", "é", "do", "da", "com", "e", "que", "quê", "por", "para", "o", "a", "os", "as", "um", "de", "oq", "pq", "vc", "q"];
 
 
-Object.size = function(obj) {
+Object.size = function (obj) {
     var size = 0, key;
     for (key in obj) {
         if (obj.hasOwnProperty(key)) size++;
