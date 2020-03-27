@@ -592,7 +592,7 @@ var questions = [
     // 44
     [
         "febre",
-        ["estou", "com", "febre", "febril", "38", "39", "40", "graus", "tenho", "sintoma", "sintomas"],
+        ["estou", "com", "febre", "febril", "38", "39", "40", "graus", "tenho", "sintoma", "sintomas", "virus", "covid19", "coronavirus"],
         "Estou com febre. Tenho coronavírus?",
         "Febre é um dos sintomas do COVID-19 assim como de várias outras doenças. No caso do novo coronavírus, a febre é muitas vezes acompanhada por tosse seca e dificuldade de respirar. Se você estiver preocupado(a), fale com um médico imediatamente.",
         "Organização Mundial da Saúde (OMS)",
@@ -601,7 +601,7 @@ var questions = [
     // 45
     [
         "tossindo",
-        ["estou", "com", "tosse", "tossindo", "seca", "muco", "catarro", "tusso", "tenho", "sintoma", "sintomas"],
+        ["estou", "com", "tosse", "tossindo", "seca", "muco", "catarro", "tusso", "tenho", "sintoma", "sintomas", "virus", "covid19", "coronavirus"],
         "Estou tossindo. Tenho coronavírus?",
         "Tosse é um dos sintomas do COVID-19 assim como de várias outras doenças. No caso do novo coronavírus, a tosse normalmente é seca e sem catarro, e é muitas vezes acompanhada por febre e dificuldade de respirar. Se você estiver preocupado(a), fale com um médico imediatamente.",
         "Organização Mundial da Saúde (OMS)",
@@ -610,7 +610,7 @@ var questions = [
     // 46
     [
         "dificuldade",
-        ["estou", "com", "dificuldade", "respirar", "de", "problema", "respiração", "não", "consigo", "respirar", "direito", "problema", "repiratório", "falta", "ar"],
+        ["estou", "com", "dificuldade", "respirar", "de", "problema", "respiração", "não", "consigo", "respirar", "direito", "problema", "repiratório", "falta", "ar", "virus", "covid19", "coronavirus"],
         "Estou com dificuldade de respirar. Tenho coronavírus?",
         "Se você estiver com dificuldade de respirar ou falta de ar fale com um médico <b>imediatamente</b>. Além de ser um sintoma clássico do COVID-19, é uma condição séria que precisa de tratamento independemente.",
         "Organização Mundial da Saúde (OMS)",
