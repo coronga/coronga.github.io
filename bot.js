@@ -109,8 +109,8 @@ function primaryParser(parsedInput) {
 
 
 function secondaryParser(parsedInput, secondaryMatches) {
-    console.log(JSON.stringify(secondaryMatches));
-    console.log(Object.size(secondaryMatches));
+/*     console.log(JSON.stringify(secondaryMatches));
+    console.log(Object.size(secondaryMatches)); */
     if (Object.size(secondaryMatches) == 0) {
         tertiaryParser(parsedInput);
     }
@@ -124,14 +124,14 @@ function secondaryParser(parsedInput, secondaryMatches) {
 }
 
 function tertiaryParser(parsedInput) {
-    console.log(parsedInput);
+    // console.log(parsedInput);
     var results = [];
     for (var i = 0; i < questions.length; i++) {
         for (var j = 0; j < parsedInput.length; j++) {
             var chars = parsedInput[j].split('');
             var notInOverlap = questions[i][0].split('').filter(char => chars.indexOf(char) == -1);
             var coverage = ((chars.length - notInOverlap.length) * 100 / chars.length);
-            console.log(questions[i][0], coverage);
+            // console.log(questions[i][0], coverage);
             if (coverage >= 90) {
                 results.push(d[i]);
                 printOptions(results);
@@ -569,7 +569,7 @@ var questions = [
     // 41
     [
         "remédio",
-        ["posso", "febre", "sintomas", "virus", "covid19", "coronavirus", "cuidar", "recuperar", "dipirona", "tosse", "tomar", "ibuprofeno", "paracetamol", "qual", "melhor", "devo", "sugerido", "melhor", "recomendado", "ibuprofen", "remédio", "pílula", "medicamento", "medicação", "tratar", "medicar"],
+        ["posso", "febre", "sintomas", "virus", "covid19", "coronavirus", "cuidar", "recuperar", "dipirona", "tosse", "tomar", "ibuprofeno", "paracetamol", "qual", "melhor", "devo", "sugerido", "melhor", "recomendado", "ibuprofen", "remédio", "pílula", "medicamento", "medicação", "tratar", "medicar", "tossindo", "estou", "febre"],
         "Qual remédio devo tomar para tratar os sintomas?",
         "O porta-voz da Organização Mundial da Saúde (OMS) recomendou que pessoas infectadas com o COVID-19 tomassem <b>paracetamol</b>, se forem se auto-medicar. Sempre consulte com seu médico antes de tomar qualquer medicamento.",
         "",
@@ -578,7 +578,7 @@ var questions = [
     // 42
     [
         "medicamento",
-        ["posso", "virus", "covid19", "coronavirus", "febre", "sintomas", "cuidar", "recuperar", "dipirona", "tosse", "tomar", "ibuprofeno", "paracetamol", "qual", "melhor", "devo", "sugerido", "melhor", "recomendado", "ibuprofen", "remédio", "pílula", "medicamento", "medicação", "tratar", "medicar"],
+        ["posso", "febre", "sintomas", "virus", "covid19", "coronavirus", "cuidar", "recuperar", "dipirona", "tosse", "tomar", "ibuprofeno", "paracetamol", "qual", "melhor", "devo", "sugerido", "melhor", "recomendado", "ibuprofen", "remédio", "pílula", "medicamento", "medicação", "tratar", "medicar", "tossindo", "estou", "febre"],
         "Qual remédio devo tomar para tratar os sintomas?",
         "O porta-voz da Organização Mundial da Saúde (OMS) recomendou que pessoas infectadas com o COVID-19 tomassem <b>paracetamol</b>, se forem se auto-medicar. Sempre consulte com seu médico antes de tomar qualquer medicamento.",
         "",
