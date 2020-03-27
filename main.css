@@ -90,6 +90,14 @@ input, button
     
 }
 
+.fb-share-button {
+    vertical-align: top !important;
+}
+
+#twt {
+    vertical-align: top !important;
+    display: inline;
+}
 .footer {
     font-family: Helvetica;
     color: rgb(112, 111, 111);

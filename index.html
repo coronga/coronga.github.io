@@ -15,11 +15,16 @@
     <!-- OG GRAPH -->
 
     <meta property="og:title" content="Robô do Coronga - Respostas para suas perguntas sobre o COVID-19" />
-    <meta property="og:description" content="Entenda como se proteger do novo coronavírus. Vamos vencer o COVID-19 juntos." />
+    <meta property="og:description"
+        content="Entenda como se proteger do novo coronavírus. Vamos vencer o COVID-19 juntos." />
     <meta property="og:image:url" content="https://contraovirus.com.br/og.png" />
     <meta property="og:image:alt" content="Não é só uma gripezinha." />
     <meta property="og:locale" content="pt_BR" />
-    
+
+    <!-- TWITTER CARD -->
+    <meta name="twitter:site" content="Eu sou contra o vírus! #NãoÉSóUmaGripezinha">
+    <meta name="twitter:url" content="https://contraovirus.com.br/">
+    <meta name="twitter:title" content="Eu sou contra o vírus! #NãoÉSóUmaGripezinha">
 
     <title>Robô do Coronga - Respostas para suas perguntas sobre o COVID-19</title>
 
@@ -37,9 +42,21 @@
 
 <body>
     <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&autoLogAppEvents=1&version=v6.0&appId=258755931815187"></script>
-        <div>
-    <div class="display-set">
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&autoLogAppEvents=1&version=v6.0&appId=258755931815187"></script>
+    <div>
+        <script type="text/javascript">// <![CDATA[
+            !function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (!d.getElementById(id)) {
+                    js = d.createElement(s); js.id = id;
+                    js.async = true;
+                    js.src = "https://platform.twitter.com/widgets.js";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }
+            }(document, "script", "twitter-wjs");
+                // ]]></script>
+        <div class="display-set">
             <h1 id="header-txt">Prazer! Eu sou o Robô do Coronga. 🤖
             </h1>
             <p id="secondary-txt">
@@ -71,8 +88,15 @@
         <div id="results" class="display-set"></div>
         <div id="footer">
             <small class="footer">#NãoÉSóUmaGripezinha</small>
-            <div class="fb-share-button" data-href="https://contraovirus.com.br" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcontraovirus.com.br%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartilhar</a></div>
-            <small class="credits">Feito por <a id="creds" target="_blank" href="https://www.linkedin.com/in/yakko-majuri/">Yakko Majuri</a></small>
+            <div>
+                <div class="fb-share-button" data-href="https://contraovirus.com.br" data-layout="button_count"
+                    data-size="small"><a target="_blank"
+                        href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcontraovirus.com.br%2F&amp;src=sdkpreparse"
+                        class="fb-xfbml-parse-ignore">Compartilhar</a></div>
+                <div id="twt"><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a></div>
+            </div>
+            <small class="credits">Feito por <a id="creds" target="_blank"
+                    href="https://www.linkedin.com/in/yakko-majuri/">Yakko Majuri</a></small>
         </div>
     </div>
 </body>

@@ -1,13 +1,6 @@
 const PCTG_CERTAIN = 70;
 const PCTG_POTENTIAL = 10;
 
-if (window.localStorage.getItem("new") == undefined || window.localStorage.getItem("n") == null) {
-    window.localStorage.setItem("new", "true");
-} else if (window.localStorage.getItem("new") == "true") {
-    document.getElementById("header-txt").innerHTML = "Bem vindo de volta!";
-    document.getElementById("secondary-txt").innerHTML = "Digite sua pergunta abaixo e clique nos resultados para ver a resposta.";
-}
-
 function handleUserInput() {
     var predictions = document.getElementById("predictions");
     var responseArea = document.getElementById("results");
