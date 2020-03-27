@@ -105,6 +105,18 @@ input, button
     text-align: center;
     display: block;
 }
+
+#disclaimer {
+    font-family: Helvetica;
+    color: rgb(133, 132, 132);
+    font-size: 10px;
+    margin-bottom: 8px;
+    text-align: center;
+    display: block;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
 .credits {
     font-family: Helvetica;
     color: rgb(170, 170, 170) !important;
@@ -340,6 +352,11 @@ button span:before, button span:after
         margin-left: 6%;
         margin-right: 6%;
     }
+    #disclaimer {
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+    
 
 }
 
