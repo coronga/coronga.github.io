@@ -40,7 +40,7 @@ html, body
     
 }
 #results {
-    margin-bottom: 75px !important;
+    margin-bottom: 40px !important;
 }
 #predictions {
     margin-top: 10%;
@@ -92,10 +92,33 @@ input, button
 
 .footer {
     font-family: Helvetica;
+    color: rgb(112, 111, 111);
+    margin-bottom: 8px;
+    text-align: center;
+    display: block;
+}
+.credits {
+    font-family: Helvetica;
+    color: rgb(170, 170, 170) !important;
+    font-size: 8px;
+    margin-top: 20px;
     text-align: center;
     display: block;
 }
 
+#creds {
+    color: rgb(92, 92, 92) !important;
+    text-decoration: none !important;
+}
+
+#footer {
+    display: block;
+    justify-content: center;
+    justify-self: center; 
+    text-align: center;
+    margin-bottom: 40px;
+
+}
 
 form
 {
