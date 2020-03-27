@@ -331,6 +331,15 @@ button span:before, button span:after
     p {
         line-height: 25px !important;
     }
+    .reply-title {
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+    
+    .reply-txt {
+        margin-left: 6%;
+        margin-right: 6%;
+    }
 
 }
 
