@@ -23,7 +23,7 @@ function handleButton() {
     handleUserInput();
     var predictions = document.getElementById("predictions");
     var responseArea = document.getElementById("results");
-    var reply = "<p class='reply-txt'>Me desculpe, não consegui encontrar uma resposta para você. Talvez alguma das perguntas abaixo te ajude:</p>"
+    var reply = "<p class='reply-txt'>Me desculpe, não consegui encontrar uma resposta para você. Talvez alguma das perguntas abaixo te ajude. Se você acha que sua pergunta está faltando, favor nos informar <a href='https://docs.google.com/forms/d/e/1FAIpQLSeRN9yOZhFGyvfmgAKVrq01VuSrmiW6Hn0lsk6Cp8j1CbLhaA/viewform?usp=sf_link'>clicando aqui.</a> </p>"
     var results = [0, 2, 3];
     if (responseArea.innerHTML == "" && predictions.innerHTML == "") {
         for (var i = 0; i < results.length; i++) {
