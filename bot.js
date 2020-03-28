@@ -366,8 +366,8 @@ var questions = [
     [
         "casos",
         ["casos", "quantos", "confirmados", "virus", "brasil", "estatistica", "dados", "estatisticas", "mundo", "indice", "número", "infectados", "infectadas", "pessoas", "quantas", "foram", "tem", "doença", "portadores", "portadoras"],
+        "Quantos casos da doença existem?",
         "Existem 657,777 casos oficiais no mundo, sendo 3,904 desses no Brasil (Atualizado: 28/03/2020). Clique no site abaixo para ver as estatísticas oficiais do vírus ao vivo. Especialistas estimam que os números reais podem ser de 10-40 vezes mais altos.",
-        "Clique no site abaixo para ver estatísticas do vírus ao vivo.",
         "Covid19stats.live",
         "https://covid19stats.live/"
     ],
