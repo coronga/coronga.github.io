@@ -66,7 +66,7 @@ body
 input, button
 {
     color: #fff;
-    font-family: 'Nunito';
+    font-family: sans-serif;
     padding: 0;
     margin: 0;
     border: 0;
@@ -327,8 +327,9 @@ button span:before, button span:after
     }
     #mainInput {
         font-size: 30px;
-        font-family: Arial, Helvetica, sans-serif !important;
-    }
+        padding: 5px;
+/*         font-family: Arial, Helvetica, sans-serif !important;
+ */    }
     #predictions {
         margin-top: 0%;
         margin-left: 5%;
@@ -366,8 +367,8 @@ button span:before, button span:after
     #mainInput {
         font-size: 25px;
         padding: 7px;
-        font-family: Arial, Helvetica, sans-serif !important;
-    }
+/*         font-family: Arial, Helvetica, sans-serif !important;
+ */    }
 
  
 
