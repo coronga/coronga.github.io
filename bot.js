@@ -367,7 +367,7 @@ var questions = [
         "casos",
         ["casos", "quantos", "confirmados", "virus", "brasil", "estatistica", "dados", "estatisticas", "mundo", "indice", "número", "infectados", "infectadas", "pessoas", "quantas", "foram", "tem", "doença", "portadores", "portadoras"],
         "Quantos casos da doença existem?",
-        "Existem 678,905 casos oficiais no mundo, sendo 3,904 desses no Brasil (Atualizado: 29/03/2020). Clique no site abaixo para ver as estatísticas oficiais do vírus ao vivo. Especialistas estimam que os números reais podem ser de 10-40 vezes mais altos.",
+        "Existem 771,765 casos oficiais no mundo, sendo 4,445 desses no Brasil (Atualizado: 30/03/2020). Clique no site abaixo para ver as estatísticas oficiais do vírus ao vivo. Especialistas estimam que os números reais podem ser de 10-40 vezes mais altos.",
         "Covid19stats.live",
         "https://covid19stats.live/"
     ],
@@ -376,7 +376,7 @@ var questions = [
         "mundo",
         ["casos", "confirmados", "virus", "mundo", "indice", "numero", "estatistica", "dados", "estatisticas", "número", "infectados", "infectadas", "pessoas", "quantas", "foram", "tem"],
         "Quantos casos da doença existem?",
-        "Existem 678,905 casos oficiais no mundo, sendo 3,904 desses no Brasil (Atualizado: 29/03/2020). Clique no site abaixo para ver as estatísticas oficiais do vírus ao vivo. Especialistas estimam que os números reais podem ser de 10-40 vezes mais altos.",
+        "Existem 771,765 casos oficiais no mundo, sendo 4,445 desses no Brasil (Atualizado: 30/03/2020). Clique no site abaixo para ver as estatísticas oficiais do vírus ao vivo. Especialistas estimam que os números reais podem ser de 10-40 vezes mais altos.",
         "Covid19stats.live",
         "https://covid19stats.live/"
     ],
@@ -385,7 +385,7 @@ var questions = [
         "brasil",
         ["casos", "confirmados", "virus", "brasil", "mundo", "estatistica", "dados", "estatisticas", "indice", "número", "infectados", "infectadas", "pessoas", "quantas", "foram", "tem"],
         "Quantos casos da doença existem no Brasil?",
-        "Existem 3,904 casos confirmados no Brasil, com 111 mortes oficiais (Atualizado: 29/03/2020). Clique no site abaixo para ver as estatísticas oficiais do vírus ao vivo. Especialistas estimam que os números reais podem ser de 10-40 vezes mais altos.",
+        "Existem 4,445 casos confirmados no Brasil, com 120 mortes oficiais (Atualizado: 30/03/2020). Clique no site abaixo para ver as estatísticas oficiais do vírus ao vivo. Especialistas estimam que os números reais podem ser de 10-40 vezes mais altos.",
         "Covid19stats.live",
         "https://covid19stats.live/coronavirus/statistics/brazil"
     ],
@@ -394,7 +394,7 @@ var questions = [
         "mortes",
         ["mortes", "confirmados", "virus", "brasil", "mundo", "indice", "estatistica", "dados", "estatisticas", "número", "mortos", "mortes", "pessoas", "quantas", "foram", "morreram"],
         "Quantas pessoas já morreram da doença?",
-        "31,771 mortes oficiais já foram registradas, sendo 111 dessas no Brasil (Atualizado: 29/03/2020). Clique no site abaixo para ver as estatísticas oficiais do vírus ao vivo. Especialistas estimam que os números reais podem ser de 10-40 vezes mais altos.",
+        "31,771 mortes oficiais já foram registradas, sendo 120 dessas no Brasil (Atualizado: 30/03/2020). Clique no site abaixo para ver as estatísticas oficiais do vírus ao vivo. Especialistas estimam que os números reais podem ser de 10-40 vezes mais altos.",
         "Covid19stats.live",
         "https://covid19stats.live"
     ],
