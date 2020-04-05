@@ -592,7 +592,7 @@ var questions = [
         "brasil",
         ["mortes", "confirmados", "virus", "brasil", "país", "brasileiros", "brasileiras", "indice", "estatistica", "dados", "estatisticas", "número", "mortos", "mortes", "pessoas", "quantas", "foram", "morreram"],
         "Quantas pessoas já morreram da doença no Brasil?",
-        "77 mortes oficiais foram registradas no Brasil (Atualizado: 27/03/2020). Clique no site abaixo para ver as estatísticas oficiais do vírus ao vivo. Especialistas estimam que os números reais podem ser de 10-40 vezes mais altos.",
+        "446 mortes oficiais foram registradas no Brasil (Atualizado: 05/04/2020). Clique no site abaixo para ver as estatísticas oficiais do vírus ao vivo. Especialistas estimam que os números reais podem ser de 10-40 vezes mais altos.",
         "Covid19stats.live",
         "https://covid19stats.live"
     ],
