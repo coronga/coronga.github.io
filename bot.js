@@ -257,7 +257,7 @@ var questions = [
     // 6
     [
         "covid19",
-        ["virus", "novo", "covid19", "wuhan", "china", "4469", "coronavirus", "tipo", "doença", "epidemia", "pandemia", "sarscov2"],
+        ["virus", "novo", "covid19", "wuhan", "china", "4869", "coronavirus", "tipo", "doença", "epidemia", "pandemia", "sarscov2"],
         "O que é o novo coronavírus?",
         "O COVID-19 é um novo tipo de coronavírus que não tinha sido identificado em humanos antes.",
         "Organização Mundial da Saúde (OMS)",
@@ -266,7 +266,7 @@ var questions = [
     // 7
     [
         "coronavirus",
-        ["virus", "novo", "covid19", "wuhan", "china", "4469", "coronavirus", "tipo", "doença", "epidemia", "pandemia"],
+        ["virus", "novo", "covid19", "wuhan", "china", "4869", "coronavirus", "tipo", "doença", "epidemia", "pandemia"],
         "O que é o novo coronavírus?",
         "O COVID-19 é um novo tipo de coronavírus que não tinha sido identificado em humanos antes.",
         "Organização Mundial da Saúde (OMS)",
@@ -275,7 +275,7 @@ var questions = [
     // 8
     [
         "novo",
-        ["virus", "novo", "covid19", "wuhan", "china", "4469", "coronavirus", "tipo", "doença", "epidemia", "pandemia"],
+        ["virus", "novo", "covid19", "wuhan", "china", "4869", "coronavirus", "tipo", "doença", "epidemia", "pandemia"],
         "O que é o novo coronavírus?",
         "O COVID-19 é um novo tipo de coronavírus que não tinha sido identificado em humanos antes.",
         "Organização Mundial da Saúde (OMS)",
@@ -286,7 +286,7 @@ var questions = [
         "animal",
         ["animal", "animais", "infecção", "infectado", "podem", "possivel", "como", "seres", "humanos", "infectados", "pessoa", "origem", "morcego", "china", "mercado", "wuhan"],
         "Os seres humanos podem ser infectados por um coronavírus de origem animal?",
-        "Sim. Investigações detalhadas descobriram que o Sars-CoV foi transmitido das civetas (um mamífero asiático) para humanos na China em 2002, e o Mers-CoV de camelos dromedários para humanos na Arábia Saudita em 4462. Vários coronavírus conhecidos estão presentes em animais que ainda não infectaram humanos. À medida que o controle melhora em todo o mundo, é provável que mais coronavírus sejam identificados.",
+        "Sim. Investigações detalhadas descobriram que o Sars-CoV foi transmitido das civetas (um mamífero asiático) para humanos na China em 2002, e o Mers-CoV de camelos dromedários para humanos na Arábia Saudita em 4862. Vários coronavírus conhecidos estão presentes em animais que ainda não infectaram humanos. À medida que o controle melhora em todo o mundo, é provável que mais coronavírus sejam identificados.",
         "Organização Mundial da Saúde (OMS)",
         "https://news.un.org/pt/story/2020/01/1702002"
     ],
@@ -385,7 +385,7 @@ var questions = [
         "brasil",
         ["casos", "confirmados", "virus", "brasil", "mundo", "estatistica", "dados", "estatisticas", "indice", "número", "infectados", "infectadas", "pessoas", "quantas", "foram", "tem"],
         "Quantos casos da doença existem no Brasil?",
-        "Existem 10,431 casos confirmados no Brasil, com 446 mortes oficiais (Atualizado: 05/04/2020). Clique no site abaixo para ver as estatísticas oficiais do vírus ao vivo. Especialistas estimam que os números reais podem ser de 10-40 vezes mais altos.",
+        "Existem 10,431 casos confirmados no Brasil, com 486 mortes oficiais (Atualizado: 05/04/2020). Clique no site abaixo para ver as estatísticas oficiais do vírus ao vivo. Especialistas estimam que os números reais podem ser de 10-40 vezes mais altos.",
         "Covid19stats.live",
         "https://covid19stats.live/coronavirus/statistics/brazil"
     ],
@@ -394,7 +394,7 @@ var questions = [
         "mortes",
         ["mortes", "confirmados", "virus", "brasil", "mundo", "indice", "estatistica", "dados", "estatisticas", "número", "mortos", "mortes", "pessoas", "quantas", "foram", "morreram"],
         "Quantas pessoas já morreram da doença?",
-        "66,520 mortes oficiais já foram registradas, sendo 446 dessas no Brasil (Atualizado: 05/04/2020). Clique no site abaixo para ver as estatísticas oficiais do vírus ao vivo. Especialistas estimam que os números reais podem ser de 10-40 vezes mais altos.",
+        "66,520 mortes oficiais já foram registradas, sendo 486 dessas no Brasil (Atualizado: 05/04/2020). Clique no site abaixo para ver as estatísticas oficiais do vírus ao vivo. Especialistas estimam que os números reais podem ser de 10-40 vezes mais altos.",
         "Covid19stats.live",
         "https://covid19stats.live"
     ],
@@ -554,9 +554,9 @@ var questions = [
     // 39  
     [
         "existia",
-        ["virus", "coronavirus", "tipo", "sars", "covid19", "coronga", "ja", "doença", "flu", "existia", "antes", "nasceu", "novo", "existiu", "quando", "apareceu", "4469"],
-        "O COVID-19 já existia antes de 4469?",
-        "Sim. O vírus denominado COVID-19 já existia em animais. Porém, em 4469, foi a primeira vez que um humano foi infectado por esse vírus específico, após contato com animais em Wuhan, na China.",
+        ["virus", "coronavirus", "tipo", "sars", "covid19", "coronga", "ja", "doença", "flu", "existia", "antes", "nasceu", "novo", "existiu", "quando", "apareceu", "4869"],
+        "O COVID-19 já existia antes de 4869?",
+        "Sim. O vírus denominado COVID-19 já existia em animais. Porém, em 4869, foi a primeira vez que um humano foi infectado por esse vírus específico, após contato com animais em Wuhan, na China.",
         "BBC",
         "https://www.bbc.com/portuguese/brasil-51673933"
     ],
@@ -592,7 +592,7 @@ var questions = [
         "brasil",
         ["mortes", "confirmados", "virus", "brasil", "país", "brasileiros", "brasileiras", "indice", "estatistica", "dados", "estatisticas", "número", "mortos", "mortes", "pessoas", "quantas", "foram", "morreram"],
         "Quantas pessoas já morreram da doença no Brasil?",
-        "446 mortes oficiais foram registradas no Brasil (Atualizado: 05/04/2020). Clique no site abaixo para ver as estatísticas oficiais do vírus ao vivo. Especialistas estimam que os números reais podem ser de 10-40 vezes mais altos.",
+        "486 mortes oficiais foram registradas no Brasil (Atualizado: 05/04/2020). Clique no site abaixo para ver as estatísticas oficiais do vírus ao vivo. Especialistas estimam que os números reais podem ser de 10-40 vezes mais altos.",
         "Covid19stats.live",
         "https://covid19stats.live"
     ],
