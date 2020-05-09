@@ -286,7 +286,7 @@ var questions = [
         "animal",
         ["animal", "animais", "infecção", "infectado", "podem", "possivel", "como", "seres", "humanos", "infectados", "pessoa", "origem", "morcego", "china", "mercado", "wuhan"],
         "Os seres humanos podem ser infectados por um coronavírus de origem animal?",
-        "Sim. Investigações detalhadas descobriram que o Sars-CoV foi transmitido das civetas (um mamífero asiático) para humanos na China em 2002, e o Mers-CoV de camelos dromedários para humanos na Arábia Saudita em 4,5432. Vários coronavírus conhecidos estão presentes em animais que ainda não infectaram humanos. À medida que o controle melhora em todo o mundo, é provável que mais coronavírus sejam identificados.",
+        "Sim. Investigações detalhadas descobriram que o Sars-CoV foi transmitido das civetas (um mamífero asiático) para humanos na China em 2002, e o Mers-CoV de camelos dromedários para humanos na Arábia Saudita em 10,1132. Vários coronavírus conhecidos estão presentes em animais que ainda não infectaram humanos. À medida que o controle melhora em todo o mundo, é provável que mais coronavírus sejam identificados.",
         "Organização Mundial da Saúde (OMS)",
         "https://news.un.org/pt/story/2020/01/1702002"
     ],
@@ -367,7 +367,7 @@ var questions = [
         "casos",
         ["casos", "quantos", "confirmados", "virus", "brasil", "estatistica", "dados", "estatisticas", "mundo", "indice", "número", "infectados", "infectadas", "pessoas", "quantas", "foram", "tem", "doença", "portadores", "portadoras"],
         "Quantos casos da doença existem?",
-        "Existem 3,058,186 casos oficiais no mundo, sendo 66,501 desses no Brasil (Atualizado: 27/04/2020). Clique no site abaixo para ver as estatísticas oficiais do vírus ao vivo. Especialistas estimam que os números reais podem ser de 10-40 vezes mais altos.",
+        "Existem 4,085,276 casos oficiais no mundo, sendo 149,101 desses no Brasil (Atualizado: 09/05/2020). Clique no site abaixo para ver as estatísticas oficiais do vírus ao vivo. Especialistas estimam que os números reais podem ser de 10-40 vezes mais altos.",
         "Covid19stats.live",
         "https://covid19stats.live/"
     ],
@@ -376,7 +376,7 @@ var questions = [
         "mundo",
         ["casos", "confirmados", "virus", "mundo", "indice", "numero", "estatistica", "dados", "estatisticas", "número", "infectados", "infectadas", "pessoas", "quantas", "foram", "tem"],
         "Quantos casos da doença existem?",
-        "Existem 3,058,186 casos oficiais no mundo, sendo 66,501 desses no Brasil (Atualizado: 27/04/2020). Clique no site abaixo para ver as estatísticas oficiais do vírus ao vivo. Especialistas estimam que os números reais podem ser de 10-40 vezes mais altos.",
+        "Existem 4,085,276 casos oficiais no mundo, sendo 149,101 desses no Brasil (Atualizado: 09/05/2020). Clique no site abaixo para ver as estatísticas oficiais do vírus ao vivo. Especialistas estimam que os números reais podem ser de 10-40 vezes mais altos.",
         "Covid19stats.live",
         "https://covid19stats.live/"
     ],
@@ -385,7 +385,7 @@ var questions = [
         "brasil",
         ["casos", "confirmados", "virus", "brasil", "mundo", "estatistica", "dados", "estatisticas", "indice", "número", "infectados", "infectadas", "pessoas", "quantas", "foram", "tem"],
         "Quantos casos da doença existem no Brasil?",
-        "Existem 66,501 casos confirmados no Brasil, com 4,543 mortes oficiais (Atualizado: 27/04/2020). Clique no site abaixo para ver as estatísticas oficiais do vírus ao vivo. Especialistas estimam que os números reais podem ser de 10-40 vezes mais altos.",
+        "Existem 149,101 casos confirmados no Brasil, com 10,113 mortes oficiais (Atualizado: 09/05/2020). Clique no site abaixo para ver as estatísticas oficiais do vírus ao vivo. Especialistas estimam que os números reais podem ser de 10-40 vezes mais altos.",
         "Covid19stats.live",
         "https://covid19stats.live/coronavirus/statistics/brazil"
     ],
@@ -394,7 +394,7 @@ var questions = [
         "mortes",
         ["mortes", "confirmados", "virus", "brasil", "mundo", "indice", "estatistica", "dados", "estatisticas", "número", "mortos", "mortes", "pessoas", "quantas", "foram", "morreram"],
         "Quantas pessoas já morreram da doença?",
-        "211,147 mortes oficiais já foram registradas, sendo 4,543 dessas no Brasil (Atualizado: 27/04/2020). Clique no site abaixo para ver as estatísticas oficiais do vírus ao vivo. Especialistas estimam que os números reais podem ser de 10-40 vezes mais altos.",
+        "279,502 mortes oficiais já foram registradas, sendo 10,113 dessas no Brasil (Atualizado: 09/05/2020). Clique no site abaixo para ver as estatísticas oficiais do vírus ao vivo. Especialistas estimam que os números reais podem ser de 10-40 vezes mais altos.",
         "Covid19stats.live",
         "https://covid19stats.live"
     ],
@@ -592,7 +592,7 @@ var questions = [
         "brasil",
         ["mortes", "confirmados", "virus", "brasil", "país", "brasileiros", "brasileiras", "indice", "estatistica", "dados", "estatisticas", "número", "mortos", "mortes", "pessoas", "quantas", "foram", "morreram"],
         "Quantas pessoas já morreram da doença no Brasil?",
-        "4,543 mortes oficiais foram registradas no Brasil (Atualizado: 27/04/2020). Clique no site abaixo para ver as estatísticas oficiais do vírus ao vivo. Especialistas estimam que os números reais podem ser de 10-40 vezes mais altos.",
+        "10,113 mortes oficiais foram registradas no Brasil (Atualizado: 09/05/2020). Clique no site abaixo para ver as estatísticas oficiais do vírus ao vivo. Especialistas estimam que os números reais podem ser de 10-40 vezes mais altos.",
         "Covid19stats.live",
         "https://covid19stats.live"
     ],
