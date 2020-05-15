@@ -12,7 +12,7 @@ The matching algorithm (if you can even call it an algorithm) is quite primitive
 
 ## How the matching mechanism works
 
-The variable ```questions```is where most of your work will lie. 
+The variable ```questions```is where you'll do most of the work.
 
 Could it be an object? Yes. Could I have used classes to structure it better? Yes. Either way, this is what I have right now. It is structured as follows:
 
