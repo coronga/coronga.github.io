@@ -64,32 +64,6 @@ function selectedQuestion(n) {
     predictions.innerHTML = "";
     responseArea.innerHTML = '<p class="reply-title">' + questions[n][2] + '</p><p class="reply-txt">' + questions[n][3] + '</p><p class="reply-txt">Mais informações: <a target="_blank" href="' + questions[n][5] + '">' + questions[n][4] + '</a></p><center><small id="disclaimer"><b>Importante</b>: As informações nesse website tem o intuito de ajudar a população à se informar sobre a pandemia, mas não devem ser seguidas como orientação médica. Sempre faça sua própria pesquisa e consulte um médico se estiver em dúvida.</small><center>';
 }
-/* 
-function primaryParser(parsedInput) {
-    var resultIndexes = [];
-    var secondaryMatches = {};
-    for (var i = 0; i < questions.length; i++) {
-        console.log(questions[i]);
-        if (parsedInput.indexOf(questions[i][0]) != -1) {
-            resultIndexes.push(d[i]);
-            continue;
-        }
-        var notInOverlap = parsedInput.filter(term => !questions[i][1].includes(term));
-        var coverage = ((parsedInput.length - notInOverlap.length) * 100 / parsedInput.length);
-        if (coverage > PCTG_CERTAIN) {
-            resultIndexes.push(d[i]);
-        }
-        else if (coverage > PCTG_POTENTIAL) {
-            secondaryMatches[coverage] = i;
-        }
-        if (i == questions.length - 1 && resultIndexes.length > 0) {
-            printOptions(resultIndexes);
-        }
-        else if (i == questions.length - 1 && resultIndexes.length == 0) {
-            secondaryParser(parsedInput, secondaryMatches);
-        }
-    }
-} */
 
 function primaryParser(parsedInput) {
     var matches = {};
